@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; manifest-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-aCczGAEDRNFbUeW4+P55vUC3TdoN5tTcB2xvV2wRyp0=' 'sha256-gosAa07gtDknlKVns6dEp1c4di/IkgmWilJcZOSOSJY='; style-src 'unsafe-inline'; img-src data:; manifest-src data:; base-uri 'none'; form-action 'none'">
 <meta name="description" content="INDICATIV: antrenor offline, neoficial, pentru examenul ANCOM de radioamator (clasele IV, III, I/II): repetiție spațiată și examen simulat. Fără cont, fără telemetrie.">
 <meta property="og:title" content="INDICATIV — antrenor examen ANCOM radioamatori">
 <meta property="og:description" content="Antrenor offline, neoficial, pentru examenul de radioamator: repetiție spațiată și examen simulat. Fără cont, fără telemetrie.">
@@ -123,7 +123,7 @@ main{display:flex; flex-direction:column; flex:1; min-width:0;}
 }
 .brand-mark svg{width:19px; height:19px;}
 .brand-text{display:flex; flex-direction:column; line-height:1.15;}
-.brand-title{font-family:var(--mono); font-weight:700; font-size:15px; letter-spacing:.06em; color:var(--text);}
+.brand-title{margin:0; font-family:var(--mono); font-weight:700; font-size:15px; letter-spacing:.06em; color:var(--text);}
 .brand-sub{font-size:11px; color:var(--text-faint);}
 .streak-chip{
   display:flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px; color:var(--accent);
@@ -328,9 +328,18 @@ main{display:flex; flex-direction:column; flex:1; min-width:0;}
 
 /* ---------- reference ---------- */
 .ref-block{margin-top:20px;}
-.ref-block h3{font-size:13px; color:var(--text-dim); margin:0 0 10px;}
+.qs-input{width:100%; box-sizing:border-box; padding:11px 14px; border-radius:12px; border:1px solid var(--border); background:var(--bg-panel); color:var(--text); font-family:var(--sans); font-size:14px;}
+.qs-input:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+.qs-meta{font-size:12px; color:var(--text-dim); margin:8px 0;}
+.qs-item{border:1px solid var(--border); background:var(--bg-panel); border-radius:12px; padding:12px 14px; margin-bottom:8px;}
+.qs-q{font-size:14px; font-weight:600; margin:0 0 6px;}
+.qs-tag{font-size:11px; color:var(--text-dim); margin-bottom:6px;}
+.qs-opts{margin:0; padding-left:20px; font-size:13px; color:var(--text-dim);}
+.qs-opts li.ok{color:var(--text); font-weight:600;}
+@media print{ .navbar{display:none !important;} body{background:#fff !important; color:#000 !important;} }
+.ref-block h2{font-size:13px; color:var(--text-dim); margin:0 0 10px;}
 .ref-h-row{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;}
-.ref-h-row h3{margin:0;}
+.ref-h-row h2{margin:0;}
 .speak-btn{
   width:44px; height:44px; border-radius:8px; background:var(--bg-panel); border:1px solid var(--border-soft);
   display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--text-dim); flex-shrink:0;
@@ -495,7 +504,7 @@ main{display:flex; flex-direction:column; flex:1; min-width:0;}
         </svg>
       </div>
       <div class="brand-text">
-        <div class="brand-title">INDICATIV</div>
+        <h1 class="brand-title">INDICATIV</h1>
         <div class="brand-sub">antrenor examen ANCOM</div>
       </div>
     </div>
@@ -657,7 +666,7 @@ main{display:flex; flex-direction:column; flex:1; min-width:0;}
     <div class="section-title">Referință proceduri de operare</div>
     <div class="ref-block">
       <div class="ref-h-row">
-        <h3>Alfabetul fonetic internațional</h3>
+        <h2>Alfabetul fonetic internațional</h2>
         <button class="speak-btn" id="btnSpeakPhonetic" style="display:none;" aria-label="Citește cu voce tare">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5.5a9 9 0 0 1 0 13" stroke-linecap="round"/></svg>
         </button>
@@ -665,23 +674,30 @@ main{display:flex; flex-direction:column; flex:1; min-width:0;}
       <div class="phon-grid" id="phonGrid"></div>
     </div>
     <div class="ref-block">
-      <h3>Codul Q folosit în trafic</h3>
+      <h2 id="qsH">Căutare în banca de întrebări</h2>
+      <label for="qsInput" class="setting-detail" style="display:block;margin:-4px 0 8px;">Scrie un cuvânt sau o expresie (minimum 3 caractere); se caută în enunț și în variante, fără diacritice. Se arată răspunsul corect — pentru studiu, nu pentru examen.</label>
+      <input type="search" id="qsInput" class="qs-input" placeholder="ex. condensator, indicativ, RST" autocomplete="off" spellcheck="false">
+      <div class="qs-meta" id="qsMeta" role="status" aria-live="polite"></div>
+      <div id="qsList"></div>
+    </div>
+    <div class="ref-block">
+      <h2>Codul Q folosit în trafic</h2>
       <table class="tbl" id="qcodeTbl"></table>
     </div>
     <div class="ref-block">
-      <h3>Prescurtări uzuale</h3>
+      <h2>Prescurtări uzuale</h2>
       <div class="abbrev-grid" id="abbrevGrid"></div>
     </div>
     <div class="ref-block">
-      <h3>Raportul RST</h3>
+      <h2>Raportul RST</h2>
       <table class="tbl" id="rstTbl"></table>
     </div>
     <div class="ref-block">
-      <h3>Semnale de primejdie</h3>
+      <h2>Semnale de primejdie</h2>
       <div id="distressList"></div>
     </div>
     <div class="ref-block">
-      <h3>Frecvențe recomandate pentru situații de urgență</h3>
+      <h2>Frecvențe recomandate pentru situații de urgență</h2>
       <div class="setting-detail" style="margin:-4px 0 10px;">Listă orientativă preluată din materialul de studiu; neverificată de autor la zi. Verifică planul de frecvențe curent la FRR / IARU Regiunea 1.</div>
       <div class="phon-grid" id="emergencyFreqGrid" style="grid-template-columns:repeat(2, 1fr);"></div>
     </div>
@@ -1760,6 +1776,26 @@ function renderReference(){
   document.getElementById("emergencyFreqGrid").innerHTML = (REFERENCE.emergency_freqs||[]).map(f=>
     `<div class="phon-cell"><div class="phon-l" style="font-size:12px;">${esc(f)}</div></div>`).join("");
 }
+
+/* ---- căutare în banca de întrebări (local, fără diacritice) ---- */
+function qsNorm(s){return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();}
+let QS_INDEX = null;
+function qsRun(){
+  const inp = document.getElementById("qsInput"), meta = document.getElementById("qsMeta"), list = document.getElementById("qsList");
+  const term = qsNorm(inp.value.trim()).replace(/\s+/g," ");
+  list.innerHTML = "";
+  if(term.length < 3){ meta.textContent = term.length ? (3-term.length===1?"Mai scrie încă un caracter.":"Mai scrie încă "+(3-term.length)+" caractere.") : ""; return; }
+  if(!QS_INDEX) QS_INDEX = QUESTIONS.map(q=>({q, h:qsNorm(q.question+" "+q.options.join(" "))}));
+  const hits = QS_INDEX.filter(x=>x.h.indexOf(term) !== -1);
+  if(!hits.length){ meta.textContent = "Nicio întrebare nu conține „"+inp.value.trim()+"”. Încearcă un cuvânt mai scurt sau fără diacritice."; return; }
+  const shown = hits.slice(0,30);
+  meta.textContent = (hits.length===1?"O întrebare găsită":hits.length+" întrebări găsite")+(hits.length>shown.length?" (primele "+shown.length+"; restrânge căutarea)":"")+".";
+  list.innerHTML = shown.map(({q})=>{
+    const sm = SECTION_META[q.section];
+    return `<div class="qs-item"><div class="qs-tag">${esc(sm?sm.short:q.section)}${q.difficulty?" · nivel "+esc(q.difficulty):""}</div><p class="qs-q">${esc(q.question)}</p><ol class="qs-opts" type="a">${q.options.map((o,i)=>`<li${i===q.correct?' class="ok"':""}>${esc(o)}${i===q.correct?" — răspuns corect":""}</li>`).join("")}</ol></div>`;
+  }).join("");
+}
+document.getElementById("qsInput").addEventListener("input", qsRun);
 
 /* =========================================================
    SETTINGS
