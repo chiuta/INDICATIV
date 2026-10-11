@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-aCczGAEDRNFbUeW4+P55vUC3TdoN5tTcB2xvV2wRyp0=' 'sha256-gosAa07gtDknlKVns6dEp1c4di/IkgmWilJcZOSOSJY='; style-src 'unsafe-inline'; img-src data:; manifest-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-aCczGAEDRNFbUeW4+P55vUC3TdoN5tTcB2xvV2wRyp0=' 'sha256-7Z8/7TnzTp9Z/AIfDTiqjIBt3KO2OdXCEsi1gGBmf3c='; style-src 'unsafe-inline'; img-src data:; manifest-src data:; base-uri 'none'; form-action 'none'">
 <meta name="description" content="INDICATIV: antrenor offline, neoficial, pentru examenul ANCOM de radioamator (clasele IV, III, I/II): repetiție spațiată și examen simulat. Fără cont, fără telemetrie.">
 <meta property="og:title" content="INDICATIV — antrenor examen ANCOM radioamatori">
 <meta property="og:description" content="Antrenor offline, neoficial, pentru examenul de radioamator: repetiție spațiată și examen simulat. Fără cont, fără telemetrie.">
@@ -783,6 +783,28 @@ const CLASS_ORDER = ["IV","III","I-II"];
    calculable question, just the clearest, most frequent patterns found
    during the content audit. Shown only if the person taps for it. */
 const FORMULA_HINTS = [
+  {test:q=>/Trei rezisten[țt]e/i.test(q.question) && /serie/i.test(q.question) && /bornele lui R3/i.test(q.question),
+   formula:"Montaj serie: același curent prin toate rezistențele. I = (U − U₃) / (R₁ + R₂); apoi R₃ = U₃ / I și P₃ = U₃ × I"},
+  {test:q=>/^Dou[ăa] rezisten[țt]e/i.test(q.question) && /paralel/i.test(q.question) && /P1=/.test(q.question) && /puterea P2/i.test(q.question),
+   formula:"În paralel tensiunea U este comună, deci P = U² / R și P₂ = P₁ × R₁ / R₂ (rezistența internă a sursei nu intervine)"},
+  {test:q=>/^Dou[ăa] rezisten[țt]e/i.test(q.question) && /paralel/i.test(q.question) && /P1=/.test(q.question) && /curentul (I2|Is)/i.test(q.question),
+   formula:"În paralel tensiunea U este comună: U = √(P₁ × R₁); I₂ = U / R₂; curentul total Is = I₁ + I₂ = U/R₁ + U/R₂"},
+  {test:q=>/bec de/i.test(q.question) && /rezisten[țt][ăa] serie/i.test(q.question),
+   formula:"Becul nominal: I = P / U_bec. Rezistența serie preia restul tensiunii: R = (U_sursă − U_bec) / I, iar puterea ei P_R = (U_sursă − U_bec) × I"},
+  {test:q=>/AL=/i.test(q.question) && /tor/i.test(q.question),
+   formula:"Tor de ferită: L = AL × N² (AL în nH/spiră²), deci N = √(L / AL)"},
+  {test:q=>/(NBFM|F3E)/i.test(q.question) && /deviați/i.test(q.question) && /banda/i.test(q.question),
+   formula:"Regula lui Carson: B ≈ 2 × (Δf + f_mod), cu Δf deviația maximă și f_mod frecvența modulatoare"},
+  {test:q=>/(NBFM|F3E)/i.test(q.question) && /indicele de modula[țt]ie/i.test(q.question),
+   formula:"Indice de modulație FM: Km = Δf / f_mod (deviația maximă împărțită la frecvența modulatoare)"},
+  {test:q=>/tensiune.*eficac/i.test(q.question) && /rezisten[țt][ăa] de sarcin/i.test(q.question) && /putere/i.test(q.question),
+   formula:"Cu tensiunea eficace pe sarcină: P = U² / R"},
+  {test:q=>/c[âa][șs]tig/i.test(q.question) && /dBd/i.test(q.question) && /puterea? (emi[țt][ăa]torului|la ie[șs]ire)/i.test(q.question),
+   formula:"Același câmp la recepție ⇒ același produs putere × câștig: P₂ = P₁ × 10^((G₁ − G₂)/10) (3 dB ≈ ×2, 6 dB ≈ ×4, 10 dB = ×10)"},
+  {test:q=>/^C[âa][țt]i (micro |mili )?(Vol[țt]i|Amperi) corespund/i.test(q.question),
+   formula:"Prefixe: μ (micro) = 10⁻⁶, m (mili) = 10⁻³, k (kilo) = 10³, M (mega) = 10⁶"},
+  {test:q=>/frecven[țt]a F/i.test(q.question) && /perioad[ăa] este T/i.test(q.question),
+   formula:"F = 1 / T  (T în μs → F în MHz; T în ms → F în kHz; T în ns → F în GHz)"},
   {test:q=>/curent.*circul[ăa]/i.test(q.question) && /rezisten/i.test(q.question) && /tensiune/i.test(q.question),
    formula:"Legea lui Ohm: I = U / R"},
   {test:q=>/transformator ideal/i.test(q.question) && /curent.*consum/i.test(q.question),
@@ -795,7 +817,7 @@ const FORMULA_HINTS = [
    formula:"Pentru semnal sinusoidal: Uvv = 2√2 × Uef ≈ 2,83 × Uef  (și Uvârf = √2 × Uef ≈ 1,41 × Uef)"},
   {test:q=>/perioada T/i.test(q.question) && /frecven[țt]a F/i.test(q.question),
    formula:"T = 1 / F"},
-  {test:q=>/putere disipat[ăa]/i.test(q.question) && /rezisten/i.test(q.question),
+  {test:q=>/puterea? disipat[ăa]/i.test(q.question) && /rezisten/i.test(q.question) && !/Zener/i.test(q.question),
    formula:"P = U² / R = I² × R"},
   {test:q=>/eroarea? absolut[ăa]/i.test(q.question) && /ppm/i.test(q.question),
    formula:"Eroare absolută = F × (ppm × 10⁻⁶)  — ex: 100MHz × 10ppm = 100×10⁶ × 10×10⁻⁶ = 1000Hz"},

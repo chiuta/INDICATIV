@@ -58,6 +58,7 @@ Descarcă `index.html` și deschide-l în browser; funcționează complet fără
 
 Ultima actualizare: 11 octombrie 2026.
 
+- Formulele afișate după răspuns în antrenament acoperă acum 100 din cele 216 întrebări numerice de radiotehnică (față de 29): rezistențe în serie și în paralel, bec cu rezistență serie, inductanță pe tor de ferită (AL), lățime de bandă și indice de modulație NBFM, putere pe sarcină, raport de câștig dBd, prefixe SI și frecvență–perioadă. Fiecare familie a fost verificată numeric cu un script față de răspunsul corect al tuturor întrebărilor potrivite (56 de întrebări calculabile, 0 neconcordanțe).
 - După fiecare răspuns în antrenament se afișează acum răspunsul corect, subiectul întrebării și, când există, formula utilă (nu doar „Corect.”). Explicații individuale pentru toate cele 723 de întrebări nu există încă în bancă.
 - Adăugată căutarea în banca de întrebări (Referință); titlul aplicației este acum `<h1>`, iar ecranul Referință folosește ierarhie de titluri corectă; stil de tipărire (fără bara de navigare); CSP: `script-src` pe hash SHA-256, fără `'unsafe-inline'`.
 - Diacriticele cu sedilă (ş, ţ) din interfață și din bancă au fost înlocuite cu forma corectă cu virgulă (ș, ț).
