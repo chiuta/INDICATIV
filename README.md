@@ -1,6 +1,6 @@
 # INDICATIV — antrenor pentru examenul ANCOM de radioamator
 
-**Versiune:** 1.0.0 · **Ultima actualizare:** 12 octombrie 2026
+**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
 
 Antrenor offline, neoficial, pentru examenul ANCOM de radioamator: repetiție spațiată și examen simulat, într-un singur fișier HTML. Însoțitor al [ETER](https://chiuta.github.io/ETER/).
 
@@ -26,6 +26,20 @@ Verificate în cod și în browser:
 - Profiluri locale separate, temă automată/luminoasă/întunecată, rezumat de progres, export/import al progresului (JSON), resetare.
 - „Căutare în banca de întrebări” (în ecranul Referință): caută în enunț și în variante, fără a ține cont de diacritice, și arată răspunsul corect; rezultate limitate la 30, cu mesaje pentru interogări prea scurte sau fără rezultate.
 - Scurtături de tastatură în quiz: 1–4 aleg varianta, Enter/Spațiu continuă.
+
+## Funcții noi (v1.1.0, 14 octombrie 2026)
+
+**Notă:** modul examen exista deja (examen simulat cu structura probelor, fără feedback pe parcurs, rezultat ADMIS/RESPINS și revizuirea greșelilor). Nu a fost dublat; am adăugat ce lipsea:
+
+### Cronometru opțional în examenul simulat
+În ecranul „Examen simulat” alegi o limită de timp: **Fără** (implicit), 30, 60 sau 90 de minute. **Durata oficială a examenului nu este stabilită în această aplicație** (nu am confirmat-o dintr-o sursă oficială), deci valoarea o alegi tu. Cronometrul (`role="timer"`) apare în bara întrebării, devine roșu în ultimele 5 minute, anunță la 10, 5 și 1 minut pentru cititoarele de ecran și se bazează pe un termen (`Date.now`), deci nu îngheață cu fila în fundal. La expirare, examenul se încheie automat: **întrebările rămase fără răspuns se numără ca greșite**, iar verdictul precizează asta. Abandonarea examenului oprește cronometrul. Alegerea se păstrează în profilul local (`settings.examMinutes`).
+
+### Istoric al examenelor simulate
+Ecranul „Examen simulat” arată ultimele 5 examene (data, clasa, ADMIS/RESPINS, „timpul a expirat”, după caz). Datele existau deja în profil (`examLog`); acum sunt vizibile. Exportul/importul de progres le păstrează.
+
+### Transparență și copie de siguranță (fff-kit)
+
+Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fereastra „Transparență”: gazdele de rețea declarate (0 cereri externe), cheile de stocare locală cu dimensiuni, API-urile folosite, mărimea și SHA-256 al fișierului (cu verificator pentru un fișier descărcat) și **copia de siguranță** a datelor aplicației într-un fișier `.fff.json` (opțional criptat cu parolă, AES-GCM 256 / PBKDF2; parola nu poate fi recuperată), import cu confirmare și ștergerea datelor aplicației. Kitul (`fff-kit`, module: core, label, bundle) este lipit în `index.html`, nu face cereri de rețea și nu schimbă datele existente; fără el aplicația funcționează la fel. Copia de siguranță a kitului cuprinde cheile `localStorage` ale profilurilor INDICATIV (progres, setări, istoric); exportul propriu al aplicației („Setări” → export progres) rămâne disponibil. Textele kitului sunt în 8 limbi (ro, en, fr, it, es, pt, hu, de); **traducerile fr/it/es/pt/hu/de sunt automate și neverificate nativ**. Interfața aplicației însăși rămâne în română.
 
 ## Manual de utilizare
 
@@ -57,6 +71,7 @@ Verificate în cod și în browser:
 Descarcă `index.html` și deschide-l în browser; funcționează complet fără internet.
 
 ## Istoric / Changelog
+- 1.1.0 — 2026-10-14: cronometru opțional în examenul simulat (cu închidere automată și întrebări rămase numărate ca greșite); istoric al ultimelor 5 examene; kit fff-kit (Transparență + copie de siguranță). Banca de întrebări nu s-a schimbat.
 
 - 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație
 - Formulele afișate după răspuns în antrenament acoperă acum 100 din cele 216 întrebări numerice de radiotehnică (față de 29): rezistențe în serie și în paralel, bec cu rezistență serie, inductanță pe tor de ferită (AL), lățime de bandă și indice de modulație NBFM, putere pe sarcină, raport de câștig dBd, prefixe SI și frecvență–perioadă. Fiecare familie a fost verificată numeric cu un script față de răspunsul corect al tuturor întrebărilor potrivite (56 de întrebări calculabile, 0 neconcordanțe).
