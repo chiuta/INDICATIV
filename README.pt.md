@@ -10,7 +10,7 @@ Treinador offline, não oficial, para o exame ANCOM de radioamador: repetição 
 
 **Aplicação online:** https://chiuta.github.io/INDICATIV/
 
-![Captura de ecrã](screenshot.png)
+![Captura de ecrã](screenshot.pt.png)
 
 ## O que é
 

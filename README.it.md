@@ -10,7 +10,7 @@ Allenatore offline, non ufficiale, per l'esame ANCOM di radioamatore: ripetizion
 
 **Applicazione online:** https://chiuta.github.io/INDICATIV/
 
-![Schermata](screenshot.png)
+![Schermata](screenshot.it.png)
 
 ## Che cos'è
 

@@ -10,7 +10,7 @@ Entraîneur hors ligne, non officiel, pour l'examen ANCOM de radioamateur : rép
 
 **Application en ligne :** https://chiuta.github.io/INDICATIV/
 
-![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.fr.png)
 
 ## De quoi s'agit-il
 

@@ -10,7 +10,7 @@ Antrenor offline, neoficial, pentru examenul ANCOM de radioamator: repetiție sp
 
 **Live:** https://chiuta.github.io/INDICATIV/
 
-![Captura de ecran](screenshot.png)
+![Captura de ecran](screenshot.ro.png)
 
 ## Ce este
 

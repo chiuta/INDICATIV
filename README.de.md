@@ -10,7 +10,7 @@ Ein Offline-Trainer, inoffiziell, für die ANCOM-Amateurfunkprüfung: verteilte 
 
 **Online-Anwendung:** https://chiuta.github.io/INDICATIV/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.de.png)
 
 ## Was es ist
 

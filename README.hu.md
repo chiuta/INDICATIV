@@ -10,7 +10,7 @@ Offline, nem hivatalos felkészítő az ANCOM rádióamatőr-vizsgához: időzí
 
 **Online alkalmazás:** https://chiuta.github.io/INDICATIV/
 
-![Képernyőkép](screenshot.png)
+![Képernyőkép](screenshot.hu.png)
 
 ## Mi ez
 

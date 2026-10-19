@@ -10,7 +10,7 @@ Entrenador sin conexión, no oficial, para el examen ANCOM de radioaficionado: r
 
 **Aplicación en línea:** https://chiuta.github.io/INDICATIV/
 
-![Captura de pantalla](screenshot.png)
+![Captura de pantalla](screenshot.es.png)
 
 ## Qué es
 

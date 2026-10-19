@@ -10,7 +10,7 @@ An offline, unofficial trainer for the ANCOM amateur radio (radioamator) exam: s
 
 **Live app:** https://chiuta.github.io/INDICATIV/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.en.png)
 
 ## What it is
 
