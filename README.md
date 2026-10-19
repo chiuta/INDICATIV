@@ -1,96 +1,98 @@
-# INDICATIV — antrenor pentru examenul ANCOM de radioamator
+# INDICATIV — trainer for the ANCOM amateur radio exam
 
-**Versiune:** 1.2.0 · **Ultima actualizare:** 2026-10-19
+**English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-Antrenor offline, neoficial, pentru examenul ANCOM de radioamator: repetiție spațiată și examen simulat, într-un singur fișier HTML. Însoțitor al [ETER](https://chiuta.github.io/ETER/).
+**Version:** 1.2.0 · **Last updated:** 2026-10-19
 
-**Live:** https://chiuta.github.io/INDICATIV/
+An offline, unofficial trainer for the ANCOM amateur radio (radioamator) exam: spaced repetition and a simulated exam, in a single HTML file. Companion to [ETER](https://chiuta.github.io/ETER/).
 
-![Captura de ecran](screenshot.png)
+**Live app:** https://chiuta.github.io/INDICATIV/
 
-## Ce este
+![Screenshot](screenshot.png)
 
-INDICATIV este un proiect personal de studiu pentru viitorii radioamatori din România. Conține o bancă de 723 de întrebări cu patru variante de răspuns, împărțite pe probele examenului: radiotehnică (469), reglementări (122), proceduri de operare (67) și protecția muncii (65). Aplicația reține local ce ai greșit și îți arată mai des acele întrebări.
+## What it is
 
-**Aplicația nu este material oficial ANCOM**, nu este realizată sau avizată de ANCOM și nu are valoare juridică. Examenul real poate diferi (întrebări, structură, reglementări actualizate).
+INDICATIV is a personal study project for future radio amateurs in Romania. It contains a bank of 723 questions with four answer options, divided by the exam's tests: radio engineering (469), regulations (122), operating procedures (67) and occupational safety (65). The app remembers locally what you got wrong and shows you those questions more often.
 
-## Funcții
+**The app is not official ANCOM material**, is not made or endorsed by ANCOM and has no legal value. The real exam may differ (questions, structure, updated regulations).
 
-Verificate în cod și în browser:
-- Antrenament cu repetiție spațiată (algoritm de tip SM-2): întrebările scadente și cele noi apar primele; cele greșite revin în aceeași rundă după câteva cartonașe. Mărimea rundei: 10, 20 sau 30 de întrebări.
-- Alegerea clasei vizate (IV, III, I/II); aplicația arată probele relevante (clasa IV nu are probă de radiotehnică; la clasa III radiotehnica folosește doar întrebările de nivel A și B).
-- Examen simulat cu structura probelor din Decizia ANCOM 245/2017 (număr de întrebări și prag minim pe probă), fără feedback pe parcurs, cu rezultat ADMIS/RESPINS și revizuirea greșelilor.
-- „Revizuiește doar greșelile”, „Recapitulare rapidă” (reglementări + proceduri), „Sprint final”, reluarea unei runde întrerupte.
-- Indicator de progres pe probă, serie de zile de studiu și graficul ultimelor 14 zile.
-- Referință: alfabet fonetic (cu citire vocală, dacă browserul o oferă), coduri Q, prescurtări, raportul RST, semnale de primejdie, frecvențe de urgență (orientativ, neverificat la zi).
-- Profiluri locale separate, temă automată/luminoasă/întunecată, rezumat de progres, export/import al progresului (JSON), resetare.
-- „Căutare în banca de întrebări” (în ecranul Referință): caută în enunț și în variante, fără a ține cont de diacritice, și arată răspunsul corect; rezultate limitate la 30, cu mesaje pentru interogări prea scurte sau fără rezultate.
-- Scurtături de tastatură în quiz: 1–4 aleg varianta, Enter/Spațiu continuă.
+## Features
 
-## Funcții noi (v1.1.0, 14 octombrie 2026)
+Verified in the code and in the browser:
+- Training with spaced repetition (SM-2-type algorithm): due and new questions appear first; the ones you got wrong come back in the same round after a few cards. Round size: 10, 20 or 30 questions.
+- Choice of the target class (IV, III, I/II); the app shows the relevant tests (class IV has no radio engineering test; for class III radio engineering uses only the level A and B questions).
+- Simulated exam with the structure of the tests from ANCOM Decision 245/2017 (number of questions and minimum threshold per test), with no feedback along the way, with a PASSED/FAILED result (ADMIS/RESPINS) and review of the mistakes.
+- "Review only the mistakes", "Quick review" (regulations + procedures), "Final sprint", resuming an interrupted round.
+- Progress indicator per test, study-day streak and a chart of the last 14 days.
+- Reference: phonetic alphabet (with voice reading, if the browser offers it), Q codes, abbreviations, the RST report, distress signals, emergency frequencies (indicative, not verified as up to date).
+- Separate local profiles, automatic/light/dark theme, progress summary, export/import of progress (JSON), reset.
+- "Search the question bank" (in the Reference screen): searches the question text and the options, ignoring diacritics, and shows the correct answer; results limited to 30, with messages for queries that are too short or have no results.
+- Keyboard shortcuts in the quiz: 1–4 choose the option, Enter/Space continue.
 
-**Notă:** modul examen exista deja (examen simulat cu structura probelor, fără feedback pe parcurs, rezultat ADMIS/RESPINS și revizuirea greșelilor). Nu a fost dublat; am adăugat ce lipsea:
+## New features (v1.1.0, 14 October 2026)
 
-### Cronometru opțional în examenul simulat
-În ecranul „Examen simulat” alegi o limită de timp: **Fără** (implicit), 30, 60 sau 90 de minute. **Durata oficială a examenului nu este stabilită în această aplicație** (nu am confirmat-o dintr-o sursă oficială), deci valoarea o alegi tu. Cronometrul (`role="timer"`) apare în bara întrebării, devine roșu în ultimele 5 minute, anunță la 10, 5 și 1 minut pentru cititoarele de ecran și se bazează pe un termen (`Date.now`), deci nu îngheață cu fila în fundal. La expirare, examenul se încheie automat: **întrebările rămase fără răspuns se numără ca greșite**, iar verdictul precizează asta. Abandonarea examenului oprește cronometrul. Alegerea se păstrează în profilul local (`settings.examMinutes`).
+**Note:** the exam mode already existed (a simulated exam with the structure of the tests, no feedback along the way, PASSED/FAILED result and review of mistakes). It was not duplicated; I added what was missing:
 
-### Istoric al examenelor simulate
-Ecranul „Examen simulat” arată ultimele 5 examene (data, clasa, ADMIS/RESPINS, „timpul a expirat”, după caz). Datele existau deja în profil (`examLog`); acum sunt vizibile. Exportul/importul de progres le păstrează.
+### Optional timer in the simulated exam
+On the "Simulated exam" screen you choose a time limit: **None** (default), 30, 60 or 90 minutes. **The official duration of the exam is not established in this app** (I did not confirm it from an official source), so you choose the value. The timer (`role="timer"`) appears in the question bar, turns red in the last 5 minutes, announces at 10, 5 and 1 minute for screen readers and is based on a deadline (`Date.now`), so it does not freeze with the tab in the background. When it expires, the exam ends automatically: **unanswered questions are counted as wrong**, and the verdict states this. Abandoning the exam stops the timer. The choice is kept in the local profile (`settings.examMinutes`).
 
-### Transparență și copie de siguranță (fff-kit)
+### History of simulated exams
+The "Simulated exam" screen shows the last 5 exams (date, class, PASSED/FAILED, "time expired", as applicable). The data already existed in the profile (`examLog`); now it is visible. The progress export/import keeps them.
 
-Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fereastra „Transparență”: gazdele de rețea declarate (0 cereri externe), cheile de stocare locală cu dimensiuni, API-urile folosite, mărimea și SHA-256 al fișierului (cu verificator pentru un fișier descărcat) și **copia de siguranță** a datelor aplicației într-un fișier `.fff.json` (opțional criptat cu parolă, AES-GCM 256 / PBKDF2; parola nu poate fi recuperată), import cu confirmare și ștergerea datelor aplicației. Kitul (`fff-kit`, module: core, label, bundle) este lipit în `index.html`, nu face cereri de rețea și nu schimbă datele existente; fără el aplicația funcționează la fel. Copia de siguranță a kitului cuprinde cheile `localStorage` ale profilurilor INDICATIV (progres, setări, istoric); exportul propriu al aplicației („Setări” → export progres) rămâne disponibil. Textele kitului sunt în 8 limbi (ro, en, fr, it, es, pt, hu, de); **traducerile fr/it/es/pt/hu/de sunt automate și neverificate nativ**. Interfața aplicației însăși rămâne în română.
+### Transparency and backup (fff-kit)
 
-## Manual de utilizare
+A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the "Transparency" window: the declared network hosts (0 external requests), the local storage keys with sizes, the APIs used, the size and SHA-256 of the file (with a verifier for a downloaded file) and the **backup** of the app's data to a `.fff.json` file (optionally encrypted with a password, AES-GCM 256 / PBKDF2; the password cannot be recovered), import with confirmation and deletion of the app's data. The kit (`fff-kit`, modules: core, label, bundle) is pasted into `index.html`, makes no network requests and does not change existing data; without it the app works the same. The kit's backup covers the `localStorage` keys of the INDICATIV profiles (progress, settings, history); the app's own export ("Settings" → export progress) remains available. The kit's texts are in 8 languages (ro, en, fr, it, es, pt, hu, de); **the fr/it/es/pt/hu/de translations are automatic and not verified by native speakers**. The app's interface itself remains in Romanian.
 
-1. Deschide pagina și citește mesajul de întâmpinare.
-2. Pe ecranul „Acasă” alege clasa vizată (IV, III sau I/II).
-3. Apasă „Antrenează-te acum” sau alege o probă din „Studiu”.
-4. Răspunde la întrebări; după fiecare răspuns apasă „Continuă”.
-5. Din „Examen” pornești o simulare completă pentru clasa aleasă.
-6. În „Setări” exporți progresul (fișier JSON) ca rezervă și îl poți importa ulterior.
+## User guide
 
-## Confidențialitate și rețea
+1. Open the page and read the welcome message.
+2. On the "Home" screen choose the target class (IV, III or I/II).
+3. Press "Train now" or choose a test from "Study".
+4. Answer the questions; after each answer press "Continue".
+5. From "Exam" you start a full simulation for the chosen class.
+6. In "Settings" you export progress (JSON file) as a backup and can import it later.
 
-- **Stocare:** progresul (repetiții, statistici, setări, profiluri) se salvează în `localStorage` al browserului, doar pe dispozitivul tău, cu tratarea erorilor (dacă stocarea e blocată, aplicația merge fără salvare). Nu folosește cookie-uri, `sessionStorage` sau IndexedDB.
-- **Rețea:** aplicația nu face niciun apel de rețea (fără `fetch`, fără resurse externe, fără gazde externe). Pagina are o politică CSP restrictivă (`default-src 'none'`). Singurul link este un `mailto:` către autor, care se deschide doar dacă îl apeși.
-- **Permisiuni:** nu cere permisiuni (nici microfon, nici locație, nici cameră). Citirea vocală a alfabetului fonetic folosește sinteza vocală a browserului/sistemului; la unele browsere vocile pot fi furnizate online de producătorul browserului, în afara controlului aplicației.
-- Exportul progresului este un fișier descărcat local; importul citește un fișier ales de tine și îl validează înainte de a-l folosi.
+## Privacy and network
 
-## Limite și avertismente
+- **Storage:** progress (repetitions, statistics, settings, profiles) is saved in the browser's `localStorage`, only on your device, with error handling (if storage is blocked, the app works without saving). It uses no cookies, `sessionStorage` or IndexedDB.
+- **Network:** the app makes no network calls (no `fetch`, no external resources, no external hosts). The page has a restrictive CSP policy (`default-src 'none'`). The only link is a `mailto:` to the author, which opens only if you press it.
+- **Permissions:** it asks for no permissions (no microphone, location or camera). Voice reading of the phonetic alphabet uses the browser's/system's speech synthesis; in some browsers the voices may be provided online by the browser's vendor, outside the app's control.
+- The progress export is a locally downloaded file; the import reads a file chosen by you and validates it before using it.
 
-- **Neoficial:** nu este un material ANCOM; textele oficiale în vigoare se găsesc la ANCOM (ancom.ro, secțiunea Radioamatori). Decizia ANCOM 245/2017 (text consolidat la 31.03.2022, modificată prin Decizia 139/2022) este baza reglementărilor, conform paginii ANCOM consultate în octombrie 2026.
-- **Banca de întrebări:** a fost verificată parțial. Răspunsurile numerice de radiotehnică (peste 150 de întrebări) au fost recalculate cu un script și nu s-au găsit răspunsuri greșite; restul întrebărilor (conceptuale, de reglementări, proceduri, protecția muncii) nu au fost confirmate individual. Unele răspunsuri reflectă formularea din materialul de studiu și pot fi depășite (de exemplu culorile conductoarelor de fază, benzile exacte de 70 cm, perioada de păstrare a jurnalului). Dacă găsești o greșeală, scrie autorului (codul întrebării apare în eticheta de deasupra ei).
-- **Proveniență și drepturi asupra întrebărilor:** capitolele I–III de radiotehnică provin, după autor, din „Lista de subiecte” publicată de ANCOM; capitolele IV–IX din surse comunitare (proiectul SimEx), pentru care autorul menționează licența GNU GPL; restul din materiale de studiu atribuite ANCOM Iași și comunității radioamatorilor. Statutul juridic al acestor texte nu a fost clarificat; de aceea repository-ul nu declară o licență pentru conținut (vezi mai jos).
-- Variantele de răspuns nu sunt amestecate (ordinea din materialul oficial e păstrată), fiindcă unele întrebări se referă la „răspunsurile precedente”.
-- Simularea de examen este didactică: rezultatul ADMIS/RESPINS nu anticipează rezultatul la examenul real.
-- Telegrafia nu este o probă în structura examenului din decizie și nu este antrenată aici.
+## Limits and warnings
 
-## Rulare locală / offline
+- **Unofficial:** it is not ANCOM material; the official texts in force are found at ANCOM (ancom.ro, the Radio amateurs section). ANCOM Decision 245/2017 (consolidated text of 31.03.2022, amended by Decision 139/2022) is the basis of the regulations, according to the ANCOM page consulted in October 2026.
+- **The question bank:** it has been partially verified. The numerical radio engineering answers (over 150 questions) were recalculated with a script and no wrong answers were found; the remaining questions (conceptual, regulations, procedures, occupational safety) were not confirmed individually. Some answers reflect the wording of the study material and may be out of date (for example the colours of phase conductors, the exact 70 cm bands, the retention period of the log). If you find a mistake, write to the author (the question code appears in the label above it).
+- **Provenance and rights over the questions:** chapters I–III of radio engineering come, according to the author, from the "List of subjects" published by ANCOM; chapters IV–IX from community sources (the SimEx project), for which the author mentions the GNU GPL license; the rest from study materials attributed to ANCOM Iași and the radio amateur community. The legal status of these texts has not been clarified; therefore the repository declares no license for the content (see below).
+- The answer options are not shuffled (the order from the official material is kept), because some questions refer to "the previous answers".
+- The exam simulation is didactic: the PASSED/FAILED result does not predict the result at the real exam.
+- Telegraphy is not a test in the exam structure of the decision and is not trained here.
 
-Descarcă `index.html` și deschide-l în browser; funcționează complet fără internet.
+## Running locally / offline
 
-## Istoric / Changelog
-- 1.2.0 — 2026-10-19: după răspuns, în antrenament, link „citește în ETER” (filă nouă) spre secțiunea care acoperă subiectul întrebării (~136 din 723 de întrebări); link spre Alfabete la referința fonetică. Doar legături, fără cereri de rețea.
-- 1.1.0 — 2026-10-14: cronometru opțional în examenul simulat (cu închidere automată și întrebări rămase numărate ca greșite); istoric al ultimelor 5 examene; kit fff-kit (Transparență + copie de siguranță). Banca de întrebări nu s-a schimbat.
+Download `index.html` and open it in the browser; it works fully without internet.
 
-- 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație
-- Formulele afișate după răspuns în antrenament acoperă acum 100 din cele 216 întrebări numerice de radiotehnică (față de 29): rezistențe în serie și în paralel, bec cu rezistență serie, inductanță pe tor de ferită (AL), lățime de bandă și indice de modulație NBFM, putere pe sarcină, raport de câștig dBd, prefixe SI și frecvență–perioadă. Fiecare familie a fost verificată numeric cu un script față de răspunsul corect al tuturor întrebărilor potrivite (56 de întrebări calculabile, 0 neconcordanțe).
-- După fiecare răspuns în antrenament se afișează acum răspunsul corect, subiectul întrebării și, când există, formula utilă (nu doar „Corect.”). Explicații individuale pentru toate cele 723 de întrebări nu există încă în bancă.
-- Adăugată căutarea în banca de întrebări (Referință); titlul aplicației este acum `<h1>`, iar ecranul Referință folosește ierarhie de titluri corectă; stil de tipărire (fără bara de navigare); CSP: `script-src` pe hash SHA-256, fără `'unsafe-inline'`.
-- Diacriticele cu sedilă (ş, ţ) din interfață și din bancă au fost înlocuite cu forma corectă cu virgulă (ș, ț).
-- Bara de navigare de pe mobil urmează acum tema (era mereu închisă la culoare, cu contrast insuficient în tema luminoasă).
-- Structură semantică (`header`, `main`, `nav`) pentru accesibilitate; axe-core: 0 violări la 1280 și 360 px.
-- Reglementările nu au putut fi reverificate independent la 11.10.2026; textul din „Limite și avertismente” rămâne cel din octombrie 2026, cu trimitere la ANCOM.
+## History / Changelog
+- 1.2.0 — 2026-10-19: after an answer, in training, a link "read in ETER" (new tab) to the section that covers the topic of the question (~136 of 723 questions); a link to Alphabets at the phonetic reference. Links only, no network requests.
+- 1.1.0 — 2026-10-14: optional timer in the simulated exam (with automatic closing and remaining questions counted as wrong); history of the last 5 exams; fff-kit kit (Transparency + backup). The question bank did not change.
 
-## Licență
+- 1.0.0 — 2026-10-12: the version and the date of the last update are shown in the app
+- The formulas shown after an answer in training now cover 100 of the 216 numerical radio engineering questions (up from 29): series and parallel resistances, lamp with series resistor, inductance on a ferrite toroid (AL), bandwidth and modulation index of NBFM, power on a load, dBd gain ratio, SI prefixes and frequency–period. Each family was checked numerically with a script against the correct answer of all matching questions (56 computable questions, 0 mismatches).
+- After each answer in training, the correct answer, the topic of the question and, when there is one, the useful formula are now shown (not just "Correct."). Individual explanations for all 723 questions do not exist yet in the bank.
+- Added search in the question bank (Reference); the app title is now `<h1>`, and the Reference screen uses a correct heading hierarchy; print style (without the navigation bar); CSP: `script-src` by SHA-256 hash, without `'unsafe-inline'`.
+- The cedilla diacritics (ş, ţ) in the interface and in the bank were replaced with the correct comma form (ș, ț).
+- The navigation bar on mobile now follows the theme (it was always dark, with insufficient contrast in the light theme).
+- Semantic structure (`header`, `main`, `nav`) for accessibility; axe-core: 0 violations at 1280 and 360 px.
+- The regulations could not be independently rechecked on 11.10.2026; the text in "Limits and warnings" remains the one from October 2026, with a reference to ANCOM.
 
-Licența nu este încă declarată. Din cauza proveniunii întrebărilor (inclusiv materiale comunitare menționate sub GNU GPL), alegerea unei licențe pentru conținut depinde de clarificarea drepturilor.
+## License
 
-## Autor
+The license is not yet declared. Because of the provenance of the questions (including community materials mentioned under the GNU GPL), choosing a license for the content depends on clarifying the rights.
+
+## Author
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
 
-## English summary
+## Summary
 
 INDICATIV is a single-file, offline, unofficial trainer (Romanian) for the ANCOM amateur-radio exam: 723 multiple-choice questions, SM-2 spaced repetition and a simulated exam following the structure in ANCOM Decision 245/2017. Progress is stored only in the browser's `localStorage`; the app makes no network requests (strict CSP). It is not official ANCOM material; licensing of the question texts is unresolved, so no licence is declared yet.
