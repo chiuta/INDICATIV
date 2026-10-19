@@ -95,6 +95,6 @@ Licența nu este încă declarată. Din cauza proveniunii întrebărilor (inclus
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
 
-## English summary
+## Rezumat
 
-INDICATIV is a single-file, offline, unofficial trainer (Romanian) for the ANCOM amateur-radio exam: 723 multiple-choice questions, SM-2 spaced repetition and a simulated exam following the structure in ANCOM Decision 245/2017. Progress is stored only in the browser's `localStorage`; the app makes no network requests (strict CSP). It is not official ANCOM material; licensing of the question texts is unresolved, so no licence is declared yet.
+INDICATIV este un antrenor neoficial, offline, într-un singur fișier (în română) pentru examenul de radioamator ANCOM: 723 de întrebări cu variante multiple, repetiție spațiată SM-2 și un examen simulat după structura din Decizia ANCOM 245/2017. Progresul se stochează doar în `localStorage` al browserului; aplicația nu face cereri de rețea (CSP strict). Nu este material oficial ANCOM; licențierea textelor întrebărilor este nerezolvată, deci nu este declarată încă nicio licență.
