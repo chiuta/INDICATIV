@@ -63,6 +63,7 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 
 ## Limits and warnings
 
+- **Translations of the questions (v1.3.1):** all 723 questions (statement and 4 options) are also available in en, fr, it, es, pt, de, hu, shown under the official Romanian text (toggle in Settings; the search also covers them). The Romanian text remains the official exam text; the translations are a **study aid**, automatic, not verified by native speakers and flagged in the app as unofficial. The regulatory content (ANCOM Decision 245/2017, procedures) and the occupational safety / first-aid questions (e.g. electrocution) are faithful translations without added advice and **need specialist or legal review**.
 - **Unofficial:** it is not ANCOM material; the official texts in force are found at ANCOM (ancom.ro, the Radio amateurs section). ANCOM Decision 245/2017 (consolidated text of 31.03.2022, amended by Decision 139/2022) is the basis of the regulations, according to the ANCOM page consulted in October 2026.
 - **The question bank:** it has been partially verified. The numerical radio engineering answers (over 150 questions) were recalculated with a script and no wrong answers were found; the remaining questions (conceptual, regulations, procedures, occupational safety) were not confirmed individually. Some answers reflect the wording of the study material and may be out of date (for example the colours of phase conductors, the exact 70 cm bands, the retention period of the log). If you find a mistake, write to the author (the question code appears in the label above it).
 - **Provenance and rights over the questions:** chapters I–III of radio engineering come, according to the author, from the "List of subjects" published by ANCOM; chapters IV–IX from community sources (the SimEx project), for which the author mentions the GNU GPL license; the rest from study materials attributed to ANCOM Iași and the radio amateur community. The legal status of these texts has not been clarified; therefore the repository declares no license for the content (see below).
@@ -75,6 +76,7 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 Download `index.html` and open it in the browser; it works fully without internet.
 
 ## History / Changelog
+- 1.3.1 — 2026-10-19: translation aid for the whole question bank (723 questions) in 7 languages, shown under the official Romanian text; the categories, subjects and the 19 formula hints are translated too.
 - 1.2.0 — 2026-10-19: after an answer, in training, a link "read in ETER" (new tab) to the section that covers the topic of the question (~136 of 723 questions); a link to Alphabets at the phonetic reference. Links only, no network requests.
 - 1.1.0 — 2026-10-14: optional timer in the simulated exam (with automatic closing and remaining questions counted as wrong); history of the last 5 exams; fff-kit kit (Transparency + backup). The question bank did not change.
 

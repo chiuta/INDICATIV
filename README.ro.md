@@ -63,6 +63,7 @@ Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fe
 
 ## Limite și avertismente
 
+- **Traduceri ale întrebărilor (v1.3.1):** toate cele 723 de întrebări (enunț și 4 variante) sunt disponibile și în en, fr, it, es, pt, de, hu, afișate sub textul oficial românesc (comutator în Setări; căutarea le cuprinde și pe ele). Textul românesc rămâne textul oficial al examenului; traducerile sunt un **ajutor la învățare**, automate, neverificate de vorbitori nativi și marcate în aplicație ca neoficiale. Conținutul de reglementări (Decizia ANCOM 245/2017, proceduri) și întrebările de protecția muncii / prim ajutor (de ex. electrocutarea) sunt traduceri fidele, fără sfaturi adăugate, și **necesită revizie de specialitate sau juridică**.
 - **Neoficial:** nu este un material ANCOM; textele oficiale în vigoare se găsesc la ANCOM (ancom.ro, secțiunea Radioamatori). Decizia ANCOM 245/2017 (text consolidat la 31.03.2022, modificată prin Decizia 139/2022) este baza reglementărilor, conform paginii ANCOM consultate în octombrie 2026.
 - **Banca de întrebări:** a fost verificată parțial. Răspunsurile numerice de radiotehnică (peste 150 de întrebări) au fost recalculate cu un script și nu s-au găsit răspunsuri greșite; restul întrebărilor (conceptuale, de reglementări, proceduri, protecția muncii) nu au fost confirmate individual. Unele răspunsuri reflectă formularea din materialul de studiu și pot fi depășite (de exemplu culorile conductoarelor de fază, benzile exacte de 70 cm, perioada de păstrare a jurnalului). Dacă găsești o greșeală, scrie autorului (codul întrebării apare în eticheta de deasupra ei).
 - **Proveniență și drepturi asupra întrebărilor:** capitolele I–III de radiotehnică provin, după autor, din „Lista de subiecte” publicată de ANCOM; capitolele IV–IX din surse comunitare (proiectul SimEx), pentru care autorul menționează licența GNU GPL; restul din materiale de studiu atribuite ANCOM Iași și comunității radioamatorilor. Statutul juridic al acestor texte nu a fost clarificat; de aceea repository-ul nu declară o licență pentru conținut (vezi mai jos).
@@ -75,6 +76,7 @@ Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fe
 Descarcă `index.html` și deschide-l în browser; funcționează complet fără internet.
 
 ## Istoric / Changelog
+- 1.3.1 — 2026-10-19: ajutor de traducere pentru întreg banca de întrebări (723 de întrebări) în 7 limbi, afișat sub textul oficial românesc; sunt traduse și categoriile, materiile și cele 19 indicii de formule.
 - 1.2.0 — 2026-10-19: după răspuns, în antrenament, link „citește în ETER” (filă nouă) spre secțiunea care acoperă subiectul întrebării (~136 din 723 de întrebări); link spre Alfabete la referința fonetică. Doar legături, fără cereri de rețea.
 - 1.1.0 — 2026-10-14: cronometru opțional în examenul simulat (cu închidere automată și întrebări rămase numărate ca greșite); istoric al ultimelor 5 examene; kit fff-kit (Transparență + copie de siguranță). Banca de întrebări nu s-a schimbat.
 

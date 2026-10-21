@@ -63,6 +63,7 @@ Ein Klick (oder Enter) auf die angezeigte Version (`v 1.1.0 · 2026-10-14`) öff
 
 ## Grenzen und Hinweise
 
+- **Übersetzungen der Fragen (v1.3.1):** alle 723 Fragen (Aufgabentext und 4 Optionen) gibt es auch auf en, fr, it, es, pt, de, hu, angezeigt unter dem offiziellen rumänischen Text (Schalter in den Einstellungen; die Suche umfasst sie ebenfalls). Der rumänische Text bleibt der offizielle Prüfungstext; die Übersetzungen sind eine **Lernhilfe**, automatisch, nicht von Muttersprachlern geprüft und in der App als inoffiziell gekennzeichnet. Die Regelungsinhalte (ANCOM-Beschluss 245/2017, Verfahren) und die Fragen zu Arbeitsschutz / Erster Hilfe (z. B. Stromschlag) sind getreue Übersetzungen ohne zusätzliche Ratschläge und **müssen fachlich bzw. juristisch geprüft werden**.
 - **Inoffiziell:** Es ist kein ANCOM-Material; die geltenden offiziellen Texte findest du bei ANCOM (ancom.ro, Bereich Funkamateure). Der ANCOM-Beschluss 245/2017 (konsolidierter Text vom 31.03.2022, geändert durch Beschluss 139/2022) ist die Grundlage der Vorschriften, laut der im Oktober 2026 eingesehenen ANCOM-Seite.
 - **Die Fragenbank:** Sie wurde teilweise geprüft. Die numerischen Funktechnik-Antworten (über 150 Fragen) wurden mit einem Skript neu berechnet, und es wurden keine falschen Antworten gefunden; die übrigen Fragen (konzeptionelle, Vorschriften, Verfahren, Arbeitsschutz) wurden nicht einzeln bestätigt. Einige Antworten spiegeln die Formulierung des Lernmaterials wider und können veraltet sein (zum Beispiel die Farben der Phasenleiter, die genauen 70-cm-Bänder, die Aufbewahrungsfrist des Stationstagebuchs). Wenn du einen Fehler findest, schreibe dem Autor (der Fragencode steht im Etikett über der Frage).
 - **Herkunft und Rechte an den Fragen:** Die Kapitel I–III der Funktechnik stammen laut Autor aus der von ANCOM veröffentlichten „Themenliste“; die Kapitel IV–IX aus Community-Quellen (das Projekt SimEx), für die der Autor die GNU-GPL-Lizenz nennt; der Rest aus Lernmaterialien, die ANCOM Iași und der Funkamateur-Gemeinschaft zugeschrieben werden. Der rechtliche Status dieser Texte wurde nicht geklärt; deshalb erklärt das Repository keine Lizenz für den Inhalt (siehe unten).
@@ -75,6 +76,7 @@ Ein Klick (oder Enter) auf die angezeigte Version (`v 1.1.0 · 2026-10-14`) öff
 Lade `index.html` herunter und öffne die Datei im Browser; sie funktioniert vollständig ohne Internet.
 
 ## Verlauf / Changelog
+- 1.3.1 — 2026-10-19: Übersetzungshilfe für den gesamten Fragenkatalog (723 Fragen) in 7 Sprachen, angezeigt unter dem offiziellen rumänischen Text; auch Kategorien, Fächer und die 19 Formelhinweise sind übersetzt.
 - 1.2.0 — 2026-10-19: Nach der Antwort im Training ein Link „in ETER lesen“ (neuer Tab) zum Abschnitt, der das Thema der Frage behandelt (~136 von 723 Fragen); Link zu Alphabeten bei der phonetischen Referenz. Nur Links, keine Netzwerkanfragen.
 - 1.1.0 — 2026-10-14: optionale Stoppuhr in der simulierten Prüfung (mit automatischem Abschluss, übrige Fragen als falsch gezählt); Verlauf der letzten 5 Prüfungen; Kit fff-kit (Transparenz + Datensicherung). Die Fragenbank hat sich nicht geändert.
 

@@ -63,6 +63,7 @@ A megjelenített verzióra (`v 1.1.0 · 2026-10-14`) kattintva (vagy Entert nyom
 
 ## Korlátok és figyelmeztetések
 
+- **A kérdések fordításai (v1.3.1):** mind a 723 kérdés (kérdés és 4 válaszlehetőség) elérhető en, fr, it, es, pt, de, hu nyelven is, a hivatalos román szöveg alatt megjelenítve (kapcsoló a Beállításokban; a keresés ezekre is kiterjed). A román szöveg marad a hivatalos vizsgaszöveg; a fordítások **tanulássegédletek**, automatikusak, anyanyelvi beszélők nem ellenőrizték, és az alkalmazás nem hivatalosként jelöli őket. A szabályozási tartalom (ANCOM 245/2017. sz. határozat, eljárások) és a munkavédelmi / elsősegély-kérdések (pl. áramütés) hű fordítások hozzáadott tanács nélkül, és **szakmai vagy jogi felülvizsgálatot igényelnek**.
 - **Nem hivatalos:** nem ANCOM-anyag; a hatályos hivatalos szövegek az ANCOM-nál találhatók (ancom.ro, Rádióamatőrök szakasz). Az ANCOM 245/2017. számú határozata (2022. 03. 31-i egységes szerkezetű szöveg, a 139/2022. számú határozattal módosítva) a szabályozás alapja, a 2026 októberében megtekintett ANCOM-oldal szerint.
 - **A kérdésbank:** részben ellenőrzött. A rádiótechnika számszerű válaszait (150-nél több kérdés) szkripttel újraszámoltam, és nem találtam hibás választ; a többi kérdést (fogalmi, szabályozási, eljárási, munkavédelmi) nem erősítettem meg egyenként. Egyes válaszok a tananyag megfogalmazását tükrözik, és elavultak lehetnek (például a fázisvezetők színei, a pontos 70 cm-es sávok, az állomásnapló megőrzési ideje). Ha hibát találsz, írj a szerzőnek (a kérdés kódja a fölötte lévő címkében látható).
 - **A kérdések eredete és jogai:** a rádiótechnika I–III. fejezete a szerző szerint az ANCOM által közzétett „Tárgylistából” származik; a IV–IX. fejezet közösségi forrásokból (a SimEx projekt), amelyekre a szerző a GNU GPL licencet említi; a többi az ANCOM Iași-nak és a rádióamatőr-közösségnek tulajdonított tananyagokból. E szövegek jogi státusza nincs tisztázva; ezért a tároló nem deklarál licencet a tartalomra (lásd lejjebb).
@@ -75,6 +76,7 @@ A megjelenített verzióra (`v 1.1.0 · 2026-10-14`) kattintva (vagy Entert nyom
 Töltsd le az `index.html` fájlt, és nyisd meg a böngészőben; internet nélkül teljes mértékben működik.
 
 ## Előzmények / Changelog
+- 1.3.1 — 2026-10-19: fordítási segédlet a teljes kérdésbankhoz (723 kérdés) 7 nyelven, a hivatalos román szöveg alatt megjelenítve; a kategóriák, a tárgyak és a 19 képlettipp is le van fordítva.
 - 1.2.0 — 2026-10-19: a válasz után, a gyakorlásnál „olvasd el az ETER-ben” hivatkozás (új lap) a kérdés témáját lefedő szakaszra (a 723 kérdésből kb. 136); hivatkozás az Ábécékre a fonetikus referenciánál. Csak hivatkozások, hálózati kérések nélkül.
 - 1.1.0 — 2026-10-14: opcionális időzítő a szimulált vizsgán (automatikus lezárással és a hátralévő kérdések rossznak számításával); az utolsó 5 vizsga előzményei; fff-kit készlet (Átláthatóság + biztonsági mentés). A kérdésbank nem változott.
 

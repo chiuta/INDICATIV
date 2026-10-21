@@ -63,6 +63,7 @@ Um clique (ou Enter) na versão apresentada (`v 1.1.0 · 2026-10-14`) abre a jan
 
 ## Limites e avisos
 
+- **Traduções das perguntas (v1.3.1):** as 723 perguntas (enunciado e 4 opções) estão disponíveis também em en, fr, it, es, pt, de, hu, apresentadas abaixo do texto oficial romeno (interruptor nas Definições; a pesquisa também as abrange). O texto romeno continua a ser o texto oficial do exame; as traduções são um **auxiliar de estudo**, automáticas, não verificadas por falantes nativos e assinaladas na aplicação como não oficiais. O conteúdo regulamentar (Decisão ANCOM 245/2017, procedimentos) e as perguntas de segurança no trabalho / primeiros socorros (p. ex. eletrocussão) são traduções fiéis sem conselhos acrescentados e **precisam de revisão especializada ou jurídica**.
 - **Não oficial:** não é material da ANCOM; os textos oficiais em vigor encontram-se na ANCOM (ancom.ro, secção Radioamadores). A Decisão ANCOM 245/2017 (texto consolidado a 31.03.2022, alterada pela Decisão 139/2022) é a base da regulamentação, segundo a página da ANCOM consultada em outubro de 2026.
 - **O banco de perguntas:** foi verificado parcialmente. As respostas numéricas de radiotecnia (mais de 150 perguntas) foram recalculadas com um script e não se encontraram respostas erradas; as restantes perguntas (concetuais, de regulamentação, de procedimentos, de proteção no trabalho) não foram confirmadas individualmente. Algumas respostas refletem a formulação do material de estudo e podem estar desatualizadas (por exemplo as cores dos condutores de fase, as bandas exatas de 70 cm, o período de conservação do diário de estação). Se encontrar um erro, escreva ao autor (o código da pergunta aparece na etiqueta acima dela).
 - **Proveniência e direitos sobre as perguntas:** os capítulos I–III de radiotecnia provêm, segundo o autor, da «Lista de temas» publicada pela ANCOM; os capítulos IV–IX de fontes comunitárias (o projeto SimEx), para as quais o autor menciona a licença GNU GPL; o restante de materiais de estudo atribuídos à ANCOM Iași e à comunidade de radioamadores. O estatuto jurídico destes textos não foi esclarecido; por isso o repositório não declara uma licença para o conteúdo (veja abaixo).
@@ -75,6 +76,7 @@ Um clique (ou Enter) na versão apresentada (`v 1.1.0 · 2026-10-14`) abre a jan
 Descarregue `index.html` e abra-o no navegador; funciona totalmente sem internet.
 
 ## Histórico / Changelog
+- 1.3.1 — 2026-10-19: auxiliar de tradução para todo o banco de perguntas (723 perguntas) em 7 idiomas, apresentado abaixo do texto oficial romeno; também foram traduzidas as categorias, as matérias e as 19 dicas de fórmulas.
 - 1.2.0 — 2026-10-19: após a resposta, no treino, ligação «ler no ETER» (novo separador) para a secção que cobre o tema da pergunta (~136 de 723 perguntas); ligação para Alfabetos na referência fonética. Apenas ligações, sem pedidos de rede.
 - 1.1.0 — 2026-10-14: cronómetro opcional no exame simulado (com encerramento automático e perguntas restantes contadas como erradas); histórico dos últimos 5 exames; kit fff-kit (Transparência + cópia de segurança). O banco de perguntas não mudou.
 
