@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.3.1 · **Last updated:** 2026-10-19
+**Version:** 1.3.2 · **Last updated:** 2026-10-22
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 Download `index.html` and open it in the browser; it works fully without internet.
 
 ## History / Changelog
+### 1.3.2 — 2026-10-22
+- Translation fix: the resume banner, the training and review sub-labels and the exam "review mistakes" button no longer show Romanian text in other languages.
+
 - 1.3.1 — 2026-10-19: translation aid for the whole question bank (723 questions) in 7 languages, shown under the official Romanian text; the categories, subjects and the 19 formula hints are translated too.
 - 1.2.0 — 2026-10-19: after an answer, in training, a link "read in ETER" (new tab) to the section that covers the topic of the question (~136 of 723 questions); a link to Alphabets at the phonetic reference. Links only, no network requests.
 - 1.1.0 — 2026-10-14: optional timer in the simulated exam (with automatic closing and remaining questions counted as wrong); history of the last 5 exams; fff-kit kit (Transparency + backup). The question bank did not change.

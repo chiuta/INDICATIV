@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.3.1 · **Utolsó frissítés:** 2026-10-19
+**Verzió:** 1.3.2 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ A megjelenített verzióra (`v 1.1.0 · 2026-10-14`) kattintva (vagy Entert nyom
 Töltsd le az `index.html` fájlt, és nyisd meg a böngészőben; internet nélkül teljes mértékben működik.
 
 ## Előzmények / Changelog
+### 1.3.2 — 2026-10-22
+- Fordítási javítás: a folytatás-sáv, a gyakorlás és az átismétlés alfeliratai, valamint a vizsga „Hibák átismétlése” gombja más nyelveken már nem jelenít meg román szöveget.
+
 - 1.3.1 — 2026-10-19: fordítási segédlet a teljes kérdésbankhoz (723 kérdés) 7 nyelven, a hivatalos román szöveg alatt megjelenítve; a kategóriák, a tárgyak és a 19 képlettipp is le van fordítva.
 - 1.2.0 — 2026-10-19: a válasz után, a gyakorlásnál „olvasd el az ETER-ben” hivatkozás (új lap) a kérdés témáját lefedő szakaszra (a 723 kérdésből kb. 136); hivatkozás az Ábécékre a fonetikus referenciánál. Csak hivatkozások, hálózati kérések nélkül.
 - 1.1.0 — 2026-10-14: opcionális időzítő a szimulált vizsgán (automatikus lezárással és a hátralévő kérdések rossznak számításával); az utolsó 5 vizsga előzményei; fff-kit készlet (Átláthatóság + biztonsági mentés). A kérdésbank nem változott.

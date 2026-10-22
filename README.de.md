@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.3.1 · **Zuletzt aktualisiert:** 2026-10-19
+**Version:** 1.3.2 · **Zuletzt aktualisiert:** 2026-10-22
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Ein Klick (oder Enter) auf die angezeigte Version (`v 1.1.0 · 2026-10-14`) öff
 Lade `index.html` herunter und öffne die Datei im Browser; sie funktioniert vollständig ohne Internet.
 
 ## Verlauf / Changelog
+### 1.3.2 — 2026-10-22
+- Übersetzungskorrektur: Das Fortsetzen-Banner, die Unterbeschriftungen für Training und Wiederholung und die Schaltfläche „Fehler wiederholen“ der Prüfung zeigen in anderen Sprachen keinen rumänischen Text mehr.
+
 - 1.3.1 — 2026-10-19: Übersetzungshilfe für den gesamten Fragenkatalog (723 Fragen) in 7 Sprachen, angezeigt unter dem offiziellen rumänischen Text; auch Kategorien, Fächer und die 19 Formelhinweise sind übersetzt.
 - 1.2.0 — 2026-10-19: Nach der Antwort im Training ein Link „in ETER lesen“ (neuer Tab) zum Abschnitt, der das Thema der Frage behandelt (~136 von 723 Fragen); Link zu Alphabeten bei der phonetischen Referenz. Nur Links, keine Netzwerkanfragen.
 - 1.1.0 — 2026-10-14: optionale Stoppuhr in der simulierten Prüfung (mit automatischem Abschluss, übrige Fragen als falsch gezählt); Verlauf der letzten 5 Prüfungen; Kit fff-kit (Transparenz + Datensicherung). Die Fragenbank hat sich nicht geändert.

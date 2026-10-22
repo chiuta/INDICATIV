@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.3.1 · **Dernière mise à jour :** 2026-10-19
+**Version :** 1.3.2 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Un clic (ou Entrée) sur la version affichée (`v 1.1.0 · 2026-10-14`) ouvre la
 Téléchargez `index.html` et ouvrez-le dans le navigateur ; il fonctionne entièrement sans internet.
 
 ## Historique / Changelog
+### 1.3.2 — 2026-10-22
+- Correction de traduction : la bannière de reprise, les sous-libellés d'entraînement et de révision et le bouton « Revoir les erreurs » de l'examen n'affichent plus de roumain dans les autres langues.
+
 - 1.3.1 — 2026-10-19 : aide à la traduction pour toute la banque de questions (723 questions) en 7 langues, affichée sous le texte officiel roumain ; les catégories, les matières et les 19 indices de formules sont aussi traduits.
 - 1.2.0 — 2026-10-19 : après une réponse, à l'entraînement, lien « lire dans ETER » (nouvel onglet) vers la section qui couvre le sujet de la question (~136 des 723 questions) ; lien vers Alphabets à la référence phonétique. Uniquement des liens, aucune requête réseau.
 - 1.1.0 — 2026-10-14 : chronomètre facultatif dans l'examen simulé (avec clôture automatique et questions restantes comptées comme fausses) ; historique des 5 derniers examens ; kit fff-kit (Transparence + sauvegarde). La banque de questions n'a pas changé.
