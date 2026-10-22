@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.3.3 · **Última actualización:** 2026-10-22
+**Versión:** 1.3.4 · **Última actualización:** 2026-10-22
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (o Intro) en la versión mostrada (`v 1.1.0 · 2026-10-14`) abre la vent
 Descarga `index.html` y ábrelo en el navegador; funciona completamente sin internet.
 
 ## Historial / Changelog
+### 1.3.4 — 2026-10-22
+- Sin conexión: se añadieron un service worker real y un manifiesto de aplicación web con iconos (instalable; el entrenador se abre sin conexión tras la primera visita). Se eliminó el antiguo manifiesto inline data:.
+- Los mensajes bloqueantes `alert()` al importar el progreso y el `prompt()` del navegador para añadir un perfil se sustituyeron por una notificación no modal y un cuadro de diálogo en la aplicación (traducidos a los 8 idiomas).
+
 ### 1.3.3 — 2026-10-22
 - Las plantillas ocultas «0 de 0 correctas» y «Has superado todas las pruebas» ya están en el diccionario de idiomas (8 idiomas).
 

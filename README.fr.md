@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.3.3 · **Dernière mise à jour :** 2026-10-22
+**Version :** 1.3.4 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (ou Entrée) sur la version affichée (`v 1.1.0 · 2026-10-14`) ouvre la
 Téléchargez `index.html` et ouvrez-le dans le navigateur ; il fonctionne entièrement sans internet.
 
 ## Historique / Changelog
+### 1.3.4 — 2026-10-22
+- Hors ligne : ajout d'un vrai service worker et d'un manifeste d'application web avec icônes (installable ; l'entraîneur s'ouvre sans connexion après la première visite). L'ancien manifeste inline data: a été supprimé.
+- Les messages bloquants `alert()` à l'importation de la progression et le `prompt()` du navigateur pour ajouter un profil ont été remplacés par une notification non modale et une boîte de dialogue intégrée (traduites dans les 8 langues).
+
 ### 1.3.3 — 2026-10-22
 - Les modèles masqués « 0 sur 0 correctes » et « Vous avez réussi toutes les épreuves » figurent désormais dans le dictionnaire de langue (8 langues).
 

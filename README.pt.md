@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.3.3 · **Última atualização:** 2026-10-22
+**Versão:** 1.3.4 · **Última atualização:** 2026-10-22
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Um clique (ou Enter) na versão apresentada (`v 1.1.0 · 2026-10-14`) abre a jan
 Descarregue `index.html` e abra-o no navegador; funciona totalmente sem internet.
 
 ## Histórico / Changelog
+### 1.3.4 — 2026-10-22
+- Sem ligação: foram adicionados um service worker real e um manifesto de aplicação web com ícones (instalável; o treinador abre sem ligação após a primeira visita). O antigo manifesto inline data: foi removido.
+- As mensagens bloqueantes `alert()` na importação do progresso e o `prompt()` do navegador para adicionar um perfil foram substituídos por uma notificação não modal e uma caixa de diálogo na aplicação (traduzidas nos 8 idiomas).
+
 ### 1.3.3 — 2026-10-22
 - Os modelos ocultos «0 de 0 corretas» e «Foste aprovado em todas as provas» passam a constar do dicionário de idiomas (8 idiomas).
 

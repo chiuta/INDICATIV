@@ -2,12 +2,13 @@
   "schema": 1,
   "slug": "indicativ",
   "name": "INDICATIV — antrenor examen ANCOM radioamatori",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "updated": "2026-10-22",
   "description": "INDICATIV: antrenor offline, neoficial, pentru examenul ANCOM de radioamator (clasele IV, III, I/II): repetiție spațiată și examen simulat. Fără cont, fără telemetrie.",
   "egress": [],
   "permissions": [
     "speechSynthesis",
+    "serviceWorker",
     "localStorage"
   ],
   "storageKeys": [
@@ -16,18 +17,19 @@
     "indicativ.v1",
     "indicativ.v1::"
   ],
-  "sizeBytes": 2135078,
-  "sha256": "9454ec43e797327ffd80fae2bdc05082f5d9a6b01d610123b8889053b2fca312",
+  "sizeBytes": 2137081,
+  "sha256": "c16934dcc3e1670927959c6215c369f21d19cfb6e55ce51a9cadf82bffb5e25e",
   "csp": {
     "present": true,
     "directives": {
       "default-src": "'none'",
-      "script-src": "sha256×3",
+      "script-src": "sha256×4",
       "style-src": "'unsafe-inline'",
-      "img-src": "data:",
-      "manifest-src": "data:",
+      "img-src": "'self' data:",
+      "manifest-src": "'self' data:",
       "base-uri": "'none'",
-      "form-action": "'none'"
+      "form-action": "'none'",
+      "worker-src": "'self'"
     },
     "scriptInline": "hash",
     "connect": "'none'"
@@ -47,7 +49,7 @@
     ],
     "pwa": {
       "manifest": true,
-      "serviceWorker": false
+      "serviceWorker": true
     },
     "modules": [
       "core",

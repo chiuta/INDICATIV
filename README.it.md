@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.3.3 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.3.4 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (o Invio) sulla versione mostrata (`v 1.1.0 · 2026-10-14`) apre la fine
 Scarica `index.html` e aprilo nel browser; funziona completamente senza internet.
 
 ## Cronologia / Changelog
+### 1.3.4 — 2026-10-22
+- Offline: aggiunti un vero service worker e un manifest di web app con icone (installabile; l'allenatore si apre senza connessione dopo la prima visita). Il vecchio manifest inline data: è stato rimosso.
+- I messaggi bloccanti `alert()` all'importazione dei progressi e il `prompt()` del browser per aggiungere un profilo sono stati sostituiti da una notifica non modale e da una finestra di dialogo nell'app (tradotte nelle 8 lingue).
+
 ### 1.3.3 — 2026-10-22
 - I modelli nascosti «0 su 0 corrette» e «Hai superato tutte le prove» sono ora nel dizionario delle lingue (8 lingue).
 

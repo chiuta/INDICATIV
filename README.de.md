@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.3.3 · **Zuletzt aktualisiert:** 2026-10-22
+**Version:** 1.3.4 · **Zuletzt aktualisiert:** 2026-10-22
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Ein Klick (oder Enter) auf die angezeigte Version (`v 1.1.0 · 2026-10-14`) öff
 Lade `index.html` herunter und öffne die Datei im Browser; sie funktioniert vollständig ohne Internet.
 
 ## Verlauf / Changelog
+### 1.3.4 — 2026-10-22
+- Offline: Ein echter Service Worker und ein Web-App-Manifest mit Symbolen wurden hinzugefügt (installierbar; der Trainer öffnet sich nach dem ersten Besuch ohne Verbindung). Das alte Inline-Manifest (data:) wurde entfernt.
+- Die blockierenden `alert()`-Meldungen beim Fortschrittsimport und das Browser-`prompt()` zum Hinzufügen eines Profils wurden durch eine nicht-modale Benachrichtigung und einen Dialog in der App ersetzt (in alle 8 Sprachen übersetzt).
+
 ### 1.3.3 — 2026-10-22
 - Die ausgeblendeten Vorlagen „0 von 0 richtig“ und „Du hast alle Prüfungsteile bestanden“ stehen jetzt im Sprachwörterbuch (8 Sprachen).
 
