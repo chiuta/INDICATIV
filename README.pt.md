@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.3.5 · **Última atualização:** 2026-10-22
+**Versão:** 1.3.6 · **Última atualização:** 2026-10-22
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Um clique (ou Enter) na versão apresentada (`v 1.1.0 · 2026-10-14`) abre a jan
 Descarregue `index.html` e abra-o no navegador; funciona totalmente sem internet.
 
 ## Histórico / Changelog
+
+### 1.3.6 — 2026-10-22
+
+fff-kit 1.1.4: áreas de toque e texto mínimo. Áreas de toque/texto corrigidos na aplicação.
 
 ### 1.3.5 — 2026-10-22
 

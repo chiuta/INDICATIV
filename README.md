@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.3.5 · **Last updated:** 2026-10-22
+**Version:** 1.3.6 · **Last updated:** 2026-10-22
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 Download `index.html` and open it in the browser; it works fully without internet.
 
 ## History / Changelog
+
+### 1.3.6 — 2026-10-22
+
+fff-kit 1.1.4: touch targets and minimum text size. Touch targets/text fixed in the app.
 
 ### 1.3.5 — 2026-10-22
 
