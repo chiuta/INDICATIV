@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.3.2 · **Last updated:** 2026-10-22
+**Version:** 1.3.3 · **Last updated:** 2026-10-22
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 Download `index.html` and open it in the browser; it works fully without internet.
 
 ## History / Changelog
+### 1.3.3 — 2026-10-22
+- Hidden templates “0 of 0 correct” and “You passed all sections” are now in the language dictionary (8 languages).
+
 ### 1.3.2 — 2026-10-22
 - Translation fix: the resume banner, the training and review sub-labels and the exam "review mistakes" button no longer show Romanian text in other languages.
 

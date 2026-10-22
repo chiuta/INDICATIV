@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.3.2 · **Dernière mise à jour :** 2026-10-22
+**Version :** 1.3.3 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Un clic (ou Entrée) sur la version affichée (`v 1.1.0 · 2026-10-14`) ouvre la
 Téléchargez `index.html` et ouvrez-le dans le navigateur ; il fonctionne entièrement sans internet.
 
 ## Historique / Changelog
+### 1.3.3 — 2026-10-22
+- Les modèles masqués « 0 sur 0 correctes » et « Vous avez réussi toutes les épreuves » figurent désormais dans le dictionnaire de langue (8 langues).
+
 ### 1.3.2 — 2026-10-22
 - Correction de traduction : la bannière de reprise, les sous-libellés d'entraînement et de révision et le bouton « Revoir les erreurs » de l'examen n'affichent plus de roumain dans les autres langues.
 

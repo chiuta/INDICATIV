@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.3.2 · **Ultima actualizare:** 2026-10-22
+**Versiune:** 1.3.3 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fe
 Descarcă `index.html` și deschide-l în browser; funcționează complet fără internet.
 
 ## Istoric / Changelog
+### 1.3.3 — 2026-10-22
+- Șabloanele ascunse „0 din 0 corecte” și „Ai promovat toate probele” sunt acum în dicționarul de limbă (8 limbi).
+
 ### 1.3.2 — 2026-10-22
 - Corecție de traducere: bannerul de reluare, subetichetele de antrenament și revizuire și butonul „Revizuiește greșitele” din examen urmează acum limba interfeței.
 

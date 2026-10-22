@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.3.2 · **Utolsó frissítés:** 2026-10-22
+**Verzió:** 1.3.3 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ A megjelenített verzióra (`v 1.1.0 · 2026-10-14`) kattintva (vagy Entert nyom
 Töltsd le az `index.html` fájlt, és nyisd meg a böngészőben; internet nélkül teljes mértékben működik.
 
 ## Előzmények / Changelog
+### 1.3.3 — 2026-10-22
+- A rejtett „0 / 0 helyes” és „Minden vizsgarészt teljesítettél” sablonok mostantól a nyelvi szótárban vannak (8 nyelv).
+
 ### 1.3.2 — 2026-10-22
 - Fordítási javítás: a folytatás-sáv, a gyakorlás és az átismétlés alfeliratai, valamint a vizsga „Hibák átismétlése” gombja más nyelveken már nem jelenít meg román szöveget.
 

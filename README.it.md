@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.3.2 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.3.3 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Un clic (o Invio) sulla versione mostrata (`v 1.1.0 · 2026-10-14`) apre la fine
 Scarica `index.html` e aprilo nel browser; funziona completamente senza internet.
 
 ## Cronologia / Changelog
+### 1.3.3 — 2026-10-22
+- I modelli nascosti «0 su 0 corrette» e «Hai superato tutte le prove» sono ora nel dizionario delle lingue (8 lingue).
+
 ### 1.3.2 — 2026-10-22
 - Correzione di traduzione: il banner di ripresa, le sottoetichette di allenamento e ripasso e il pulsante «Ripassa gli errori» dell'esame non mostrano più testo in rumeno nelle altre lingue.
 

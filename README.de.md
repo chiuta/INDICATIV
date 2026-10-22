@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.3.2 · **Zuletzt aktualisiert:** 2026-10-22
+**Version:** 1.3.3 · **Zuletzt aktualisiert:** 2026-10-22
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Ein Klick (oder Enter) auf die angezeigte Version (`v 1.1.0 · 2026-10-14`) öff
 Lade `index.html` herunter und öffne die Datei im Browser; sie funktioniert vollständig ohne Internet.
 
 ## Verlauf / Changelog
+### 1.3.3 — 2026-10-22
+- Die ausgeblendeten Vorlagen „0 von 0 richtig“ und „Du hast alle Prüfungsteile bestanden“ stehen jetzt im Sprachwörterbuch (8 Sprachen).
+
 ### 1.3.2 — 2026-10-22
 - Übersetzungskorrektur: Das Fortsetzen-Banner, die Unterbeschriftungen für Training und Wiederholung und die Schaltfläche „Fehler wiederholen“ der Prüfung zeigen in anderen Sprachen keinen rumänischen Text mehr.
 
