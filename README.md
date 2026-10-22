@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.3.4 · **Last updated:** 2026-10-22
+**Version:** 1.3.5 · **Last updated:** 2026-10-22
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 Download `index.html` and open it in the browser; it works fully without internet.
 
 ## History / Changelog
+
+### 1.3.5 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 with 600,000 iterations, anti-clickjacking protection.
 ### 1.3.4 — 2026-10-22
 - Offline: added a real service worker and a web app manifest with icons (installable; the trainer opens without a connection after the first visit). The old inline data: manifest was removed.
 - The blocking `alert()` messages on progress import and the browser `prompt()` for adding a profile were replaced by a non-modal notification and an in-app dialog (translated into all 8 languages).

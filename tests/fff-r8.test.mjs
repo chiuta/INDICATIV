@@ -15,8 +15,8 @@ console.log("1. pornire și versiune");
   check("0 erori", st.errs.length === 0, st.errs);
   check("0 cereri de rețea", st.net.length === 0, st.net);
   check("0 violări CSP", (await page.evaluate(() => window.__csp)).length === 0);
-  check("meta application-version 1.3.4", (await page.getAttribute('meta[name="application-version"]', "content")) === "1.3.4");
-  check("#app-version vizibil", /1\.3\.4 · 2026-10-22/.test(await page.textContent("#app-version")));
+  check("meta application-version 1.3.5", (await page.getAttribute('meta[name="application-version"]', "content")) === "1.3.5");
+  check("#app-version vizibil", /1\.3\.5 · 2026-10-22/.test(await page.textContent("#app-version")));
   check("fără depășire orizontală 1280", (await hOverflow(page)) <= 0);
   await browser.close();
 }

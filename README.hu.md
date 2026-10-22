@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.3.4 · **Utolsó frissítés:** 2026-10-22
+**Verzió:** 1.3.5 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ A megjelenített verzióra (`v 1.1.0 · 2026-10-14`) kattintva (vagy Entert nyom
 Töltsd le az `index.html` fájlt, és nyisd meg a böngészőben; internet nélkül teljes mértékben működik.
 
 ## Előzmények / Changelog
+
+### 1.3.5 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 600 000 iterációval, clickjacking elleni védelem.
 ### 1.3.4 — 2026-10-22
 - Offline: valódi service worker és ikonokkal ellátott webalkalmazás-manifest került be (telepíthető; az első látogatás után kapcsolat nélkül is megnyílik). A régi inline data: manifest eltávolításra került.
 - Az előrehaladás importálásakor megjelenő blokkoló `alert()` üzenetek és a profil hozzáadásához használt böngésző-`prompt()` helyét nem modális értesítés és alkalmazáson belüli párbeszédablak vette át (mind a 8 nyelvre lefordítva).

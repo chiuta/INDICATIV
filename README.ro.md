@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.3.4 · **Ultima actualizare:** 2026-10-22
+**Versiune:** 1.3.5 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fe
 Descarcă `index.html` și deschide-l în browser; funcționează complet fără internet.
 
 ## Istoric / Changelog
+
+### 1.3.5 — 2026-10-22
+
+fff-kit 1.1.2: PBKDF2 600 000 iterații, protecție anti-clickjacking.
 ### 1.3.4 — 2026-10-22
 - Offline: s-au adăugat un service worker real și un manifest de aplicație web cu pictograme (instalabil; antrenorul se deschide fără conexiune după prima vizită). Vechiul manifest inline de tip data: a fost eliminat.
 - Mesajele blocante `alert()` de la importul progresului și `prompt()`-ul browserului pentru adăugarea unui profil au fost înlocuite cu o notificare nemodală și un dialog în aplicație (traduse în cele 8 limbi).
