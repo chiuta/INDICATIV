@@ -15,8 +15,8 @@ console.log("1. pornire și versiune");
   check("0 erori", st.errs.length === 0, st.errs);
   check("0 cereri de rețea", st.net.length === 0, st.net);
   check("0 violări CSP", (await page.evaluate(() => window.__csp)).length === 0);
-  check("meta application-version 1.3.7", (await page.getAttribute('meta[name="application-version"]', "content")) === "1.3.7");
-  check("#app-version vizibil", /1\.3\.7 · 2026-10-23/.test(await page.textContent("#app-version")));
+  check("meta application-version 1.3.8", (await page.getAttribute('meta[name="application-version"]', "content")) === "1.3.8");
+  check("#app-version vizibil", /1\.3\.8 · 2026-10-23/.test(await page.textContent("#app-version")));
   check("fără depășire orizontală 1280", (await hOverflow(page)) <= 0);
   await browser.close();
 }
@@ -59,12 +59,12 @@ console.log("2. cronometru de examen");
   await page.click('#examTimeSeg button[data-min="0"]');
   await page.click("#btnExamStart");
   check("fără limită: cronometru ascuns", await page.isHidden("#quizTimer"));
-  await page.click("#quizClose");
+  await page.click("#quizClose"); await page.locator('dialog[data-fff-dialog="confirm"] button').last().click({timeout: 5000}); /* FFF.dialog.confirm în loc de window.confirm */
   // abandon oprește cronometrul
   await nav(page, "examsetup");
   await page.click('#examTimeSeg button[data-min="60"]'); await page.click("#btnExamStart");
   check("60 min: vizibil", await page.isVisible("#quizTimer"));
-  await page.click("#quizClose");
+  await page.click("#quizClose"); await page.locator('dialog[data-fff-dialog="confirm"] button').last().click({timeout: 5000}); /* FFF.dialog.confirm în loc de window.confirm */
   check("abandonul oprește și ascunde cronometrul", await page.isHidden("#quizTimer"));
   await page.clock.fastForward(70 * 60 * 1000); await page.waitForTimeout(500);
   check("nimic nu se întâmplă după abandon (fără ecran de rezultat)", !(await page.isVisible("#screen-examresult")));

@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.3.7 · **Última actualización:** 2026-10-23
+**Versión:** 1.3.8 · **Última actualización:** 2026-10-23
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (o Intro) en la versión mostrada (`v 1.1.0 · 2026-10-14`) abre la vent
 Descarga `index.html` y ábrelo en el navegador; funciona completamente sin internet.
 
 ## Historial / Changelog
+
+### 1.3.8 — 2026-10-23
+
+- Diálogos: los cuadros nativos `alert`/`confirm`/`prompt` se sustituyeron por diálogos `FFF.dialog` accesibles y traducidos (teclado, trampa de foco, Esc), con el mismo comportamiento (fff-kit 1.2.0).
 
 ### 1.3.6 — 2026-10-22
 
