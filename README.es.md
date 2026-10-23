@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.3.8 · **Última actualización:** 2026-10-23
+**Versión:** 1.3.9 · **Última actualización:** 2026-10-23
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (o Intro) en la versión mostrada (`v 1.1.0 · 2026-10-14`) abre la vent
 Descarga `index.html` y ábrelo en el navegador; funciona completamente sin internet.
 
 ## Historial / Changelog
+
+### 1.3.9 — 2026-10-23
+
+- Corrección: la racha de días de estudio volvía a 1 si estudiabas en la primera hora tras el cambio al horario de verano («ayer» se calculaba como «ahora − 24 h»); ahora se usa el día natural anterior. Nueva prueba de regresión.
 
 ### 1.3.8 — 2026-10-23
 

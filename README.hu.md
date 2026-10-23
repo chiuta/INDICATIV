@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.3.8 · **Utolsó frissítés:** 2026-10-23
+**Verzió:** 1.3.9 · **Utolsó frissítés:** 2026-10-23
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ A megjelenített verzióra (`v 1.1.0 · 2026-10-14`) kattintva (vagy Entert nyom
 Töltsd le az `index.html` fájlt, és nyisd meg a böngészőben; internet nélkül teljes mértékben működik.
 
 ## Előzmények / Changelog
+
+### 1.3.9 — 2026-10-23
+
+- Javítás: a tanulási sorozat 1-re esett vissza, ha a nyári időszámításra váltás utáni első órában tanultál („tegnap” = „most − 24 óra” volt); mostantól az előző naptári napot használja. Új regressziós teszt.
 
 ### 1.3.8 — 2026-10-23
 

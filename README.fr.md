@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.3.8 · **Dernière mise à jour :** 2026-10-23
+**Version :** 1.3.9 · **Dernière mise à jour :** 2026-10-23
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (ou Entrée) sur la version affichée (`v 1.1.0 · 2026-10-14`) ouvre la
 Téléchargez `index.html` et ouvrez-le dans le navigateur ; il fonctionne entièrement sans internet.
 
 ## Historique / Changelog
+
+### 1.3.9 — 2026-10-23
+
+- Correction : la série de jours d’étude retombait à 1 si vous étudiiez dans la première heure après le passage à l’heure d’été (« hier » était calculé comme « maintenant − 24 h ») ; on utilise désormais le jour calendaire précédent. Nouveau test de régression.
 
 ### 1.3.8 — 2026-10-23
 
