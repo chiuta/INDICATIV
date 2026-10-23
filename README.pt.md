@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.3.8 · **Última atualização:** 2026-10-23
+**Versão:** 1.3.9 · **Última atualização:** 2026-10-23
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Um clique (ou Enter) na versão apresentada (`v 1.1.0 · 2026-10-14`) abre a jan
 Descarregue `index.html` e abra-o no navegador; funciona totalmente sem internet.
 
 ## Histórico / Changelog
+
+### 1.3.9 — 2026-10-23
+
+- Correção: a sequência de dias de estudo voltava a 1 se estudasse na primeira hora após a mudança para o horário de verão («ontem» era calculado como «agora − 24 h»); agora usa-se o dia de calendário anterior. Novo teste de regressão.
 
 ### 1.3.8 — 2026-10-23
 

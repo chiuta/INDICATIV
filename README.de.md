@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.3.8 · **Zuletzt aktualisiert:** 2026-10-23
+**Version:** 1.3.9 · **Zuletzt aktualisiert:** 2026-10-23
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Ein Klick (oder Enter) auf die angezeigte Version (`v 1.1.0 · 2026-10-14`) öff
 Lade `index.html` herunter und öffne die Datei im Browser; sie funktioniert vollständig ohne Internet.
 
 ## Verlauf / Changelog
+
+### 1.3.9 — 2026-10-23
+
+- Fix: Die Lernserie fiel auf 1 zurück, wenn man in der ersten Stunde nach der Umstellung auf Sommerzeit lernte („gestern“ wurde als „jetzt − 24 h“ berechnet); jetzt wird der vorherige Kalendertag verwendet. Neuer Regressionstest.
 
 ### 1.3.8 — 2026-10-23
 

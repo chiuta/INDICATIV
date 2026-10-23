@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.3.8 · **Ultimo aggiornamento:** 2026-10-23
+**Versione:** 1.3.9 · **Ultimo aggiornamento:** 2026-10-23
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Un clic (o Invio) sulla versione mostrata (`v 1.1.0 · 2026-10-14`) apre la fine
 Scarica `index.html` e aprilo nel browser; funziona completamente senza internet.
 
 ## Cronologia / Changelog
+
+### 1.3.9 — 2026-10-23
+
+- Correzione: la serie di giorni di studio tornava a 1 se si studiava nella prima ora dopo il passaggio all’ora legale («ieri» era calcolato come «adesso − 24 h»); ora si usa il giorno di calendario precedente. Nuovo test di regressione.
 
 ### 1.3.8 — 2026-10-23
 
