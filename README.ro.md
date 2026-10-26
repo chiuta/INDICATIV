@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.3.10 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -30,6 +30,12 @@ Verificate în cod și în browser:
 - Profiluri locale separate, temă automată/luminoasă/întunecată, rezumat de progres, export/import al progresului (JSON), resetare.
 - „Căutare în banca de întrebări” (în ecranul Referință): caută în enunț și în variante, fără a ține cont de diacritice, și arată răspunsul corect; rezultate limitate la 30, cu mesaje pentru interogări prea scurte sau fără rezultate.
 - Scurtături de tastatură în quiz: 1–4 aleg varianta, Enter/Spațiu continuă.
+
+## Funcții noi (v2.0.0, 26 octombrie 2026)
+
+- **Simulator de examen adaptiv**: examenul simulat păstrează structura reală a clasei alese (probe, număr de întrebări, minime), dar în modul *Adaptiv* (implicit) alege mai ales întrebările pe care le știi mai puțin, după fișele de repetiție spațiată (nevăzute, greșite, restante). Modul *Aleator* rămâne ca la examenul real.
+- **Estimare de reușită**: pe ecranul examenului, o șansă orientativă de a promova toate probele la un examen cu întrebări aleatorii, pe probă, cu acoperirea băncii văzute și cele mai slabe categorii. Este un model simplificat din istoricul tău (probabilitate de reamintire din fișa SM-2, cu scădere pentru restanțe, apoi coadă binomială pe fiecare probă); **nu este o prognoză oficială**, iar banca rămâne neoficială și verificată parțial.
+- Rezultatul și istoricul păstrează modul și estimarea de dinainte de examen.
 
 ## Funcții noi (v1.1.0, 14 octombrie 2026)
 

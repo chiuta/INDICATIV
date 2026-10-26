@@ -2,7 +2,7 @@
   "schema": 1,
   "slug": "indicativ",
   "name": "INDICATIV — antrenor examen ANCOM radioamatori",
-  "version": "1.3.10",
+  "version": "2.0.0",
   "updated": "2026-10-26",
   "description": "INDICATIV: antrenor offline, neoficial, pentru examenul ANCOM de radioamator (clasele IV, III, I/II): repetiție spațiată și examen simulat. Fără cont, fără telemetrie.",
   "egress": [],
@@ -17,8 +17,8 @@
     "indicativ.v1",
     "indicativ.v1::"
   ],
-  "sizeBytes": 2190153,
-  "sha256": "7591b80cfef22c9bf36e86a39b2286a3391c9de4fcade88eb75e8ee2b0e2b1b9",
+  "sizeBytes": 2197571,
+  "sha256": "53fb36238eb7d0220336970ea2de8ffcdb779150343db4cac881c5d520e2e009",
   "csp": {
     "present": true,
     "directives": {

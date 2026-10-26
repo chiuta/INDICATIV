@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.3.10 · **Last updated:** 2026-10-26
+**Version:** 2.0.0 · **Last updated:** 2026-10-26
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -30,6 +30,12 @@ Verified in the code and in the browser:
 - Separate local profiles, automatic/light/dark theme, progress summary, export/import of progress (JSON), reset.
 - "Search the question bank" (in the Reference screen): searches the question text and the options, ignoring diacritics, and shows the correct answer; results limited to 30, with messages for queries that are too short or have no results.
 - Keyboard shortcuts in the quiz: 1–4 choose the option, Enter/Space continue.
+
+## New features (v2.0.0, 26 October 2026)
+
+- **Adaptive exam simulator**: the mock exam keeps the real structure of the chosen class (parts, number of questions, minimums); in *Adaptive* mode (default) it draws mostly the questions you know least, using the spaced-repetition cards (unseen, missed, overdue). *Random* mode stays like the real exam.
+- **Pass estimate**: on the exam screen, a rough chance of passing all parts in an exam with random questions, per part, with the share of the bank you have seen and the weakest categories. It is a simplified model from your history (recall probability from the SM-2 card, decaying for overdue cards, then a binomial tail per part); **not an official forecast**, and the bank stays unofficial and partly verified.
+- Results and history keep the mode and the estimate made before the exam.
 
 ## New features (v1.1.0, 14 October 2026)
 
