@@ -13,7 +13,7 @@ const ok = (c, n, i) => { if (c) { pass++; console.log('  ok   ' + n); } else { 
 const h = fs.readFileSync(path.join(R, 'index.html'), 'utf8'), app = JSON.parse(fs.readFileSync(path.join(R, 'app.json'), 'utf8'));
 const S = app.sha256;
 ok(app.sizeBytes === Buffer.byteLength(h) && crypto.createHash('sha256').update(h.split(S).join('')).digest('hex') === S, 'app.json: sizeBytes și sha256 corecte');
-const b = await chromium.launch({executablePath: process.env.CHROME || '/opt/pw-browsers/chromium', args: ['--no-sandbox']});
+const b = await chromium.launch({executablePath: process.env.CHROMIUM_PATH || process.env.CHROME || undefined, args: ['--no-sandbox']});
 async function run(tz, nowIso, lastIso, streak) {
   const ctx = await b.newContext({serviceWorkers: 'block', timezoneId: tz}); await ctx.route(/^https?:/, r => r.abort());
   const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push(String(e).slice(0, 120)));

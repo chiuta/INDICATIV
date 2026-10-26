@@ -1,4 +1,8 @@
 // INDICATIV — teste pentru funcția nouă (runda 8): cronometru opțional în examenul simulat + istoric.
+// [fff-portable] versiunea/data/kitul aplicației se citesc din app.json (nu mai sunt hard-codate în teste)
+import {readFileSync as __fffRF} from 'node:fs';
+const __FFF_APP = JSON.parse(__fffRF(new URL('../app.json', import.meta.url), 'utf8'));
+const __fffRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 import {launch, axeRun, hOverflow, check, summary, kitSmoke, kitLabel} from "./_lib.mjs";
 
 async function fresh(o) {
@@ -15,8 +19,8 @@ console.log("1. pornire și versiune");
   check("0 erori", st.errs.length === 0, st.errs);
   check("0 cereri de rețea", st.net.length === 0, st.net);
   check("0 violări CSP", (await page.evaluate(() => window.__csp)).length === 0);
-  check("meta application-version 1.3.10", (await page.getAttribute('meta[name="application-version"]', "content")) === "1.3.10");
-  check("#app-version vizibil", /1\.3\.10 · 2026-10-26/.test(await page.textContent("#app-version")));
+  check(`meta application-version ${__FFF_APP.version}`, (await page.getAttribute('meta[name="application-version"]', "content")) === __FFF_APP.version);
+  check("#app-version vizibil", new RegExp(String.raw`${__fffRe(__FFF_APP.version)} · ${__fffRe(__FFF_APP.updated)}`).test(await page.textContent("#app-version")));
   check("fără depășire orizontală 1280", (await hOverflow(page)) <= 0);
   await browser.close();
 }
