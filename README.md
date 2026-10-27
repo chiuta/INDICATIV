@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.1.0 · **Last updated:** 2026-10-27
+**Version:** 2.2.0 · **Last updated:** 2026-10-27
 
 **Status:** stable (the app); content not officially validated by ANCOM · **Offline:** complete (no network requests; mailto/ETER links open only on click)
 
@@ -91,6 +91,11 @@ Download `index.html` and open it in the browser; it works fully without interne
 - The new texts exist in 8 languages; the fr/it/es/pt/hu/de translations are automatic and not checked by native speakers.
 
 ## History / Changelog
+
+### 2.2.0 — 2026-10-27 (previous: 2.1.0)
+
+- New test `tests/barem.test.mjs` (no browser): the simulation scoring scheme (`EXAM_STRUCTURE`) stays equal to Art. 14 of ANCOM Decision 245/2017, original text (M.Of. 261/2017). No behaviour change.
+- **Still not implemented**: official validation of the bank (needs ANCOM); confirming the scheme against the consolidated text in force / Decision 139/2022 (no verified source reachable from the working environment — only the original text on legeaz.net); official exam duration (not set in the decision); the percentage of verified questions stays **unmeasured**.
 
 ### 2.1.0 — 2026-10-27 (previous: 2.0.0)
 
