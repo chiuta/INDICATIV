@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+**Versiune:** 2.2.0 · **Ultima actualizare:** 2026-10-27
 
 **Stare:** stabil (aplicația); conținut nevalidat oficial ANCOM · **Offline:** complet (fără cereri de rețea; linkurile mailto/ETER se deschid doar la click)
 
@@ -91,6 +91,11 @@ Descarcă `index.html` și deschide-l în browser; funcționează complet fără
 - Textele noi sunt în 8 limbi; traducerile fr/it/es/pt/hu/de sunt automate, neverificate de vorbitori nativi.
 
 ## Istoric / Changelog
+
+### 2.2.0 — 2026-10-27 (anterior: 2.1.0)
+
+- Test nou `tests/barem.test.mjs` (fără browser): baremul simulării (`EXAM_STRUCTURE`) rămâne egal cu art. 14 din Decizia ANCOM 245/2017, textul inițial (M.Of. 261/2017). Nicio schimbare de comportament.
+- **Rămân neimplementate**: validare oficială a băncii (cere ANCOM); confirmarea baremului în textul consolidat în vigoare / Decizia 139/2022 (nu există o sursă verificată accesibilă în mediul de lucru — doar textul inițial pe legeaz.net); durata oficială a examenului (nestabilită în decizie); procentul de întrebări verificate rămâne **nemăsurat**.
 
 ### 2.1.0 — 2026-10-27 (anterior: 2.0.0)
 
