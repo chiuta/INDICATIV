@@ -2,7 +2,9 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+
+**Stare:** stabil (aplicația); conținut nevalidat oficial ANCOM · **Offline:** complet (fără cereri de rețea; linkurile mailto/ETER se deschid doar la click)
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -81,7 +83,18 @@ Un clic (sau Enter) pe versiunea afișată (`v 1.1.0 · 2026-10-14`) deschide fe
 
 Descarcă `index.html` și deschide-l în browser; funcționează complet fără internet.
 
+## Stare și noutăți 2.1.0 (2026-10-27)
+
+- **Stare conținut: nevalidat oficial ANCOM.** Banca de 723 de întrebări nu este validată sau avizată de ANCOM; afirmația se vede acum și în aplicație (ecranul Acasă). **Procentul de întrebări verificate nu a fost stabilit și nu este afirmat.** Singurul fapt susținut de autor: răspunsurile numerice de radiotehnică (peste 150 din 723) au fost recalculate cu un script.
+- **Buton „Raportează o greșeală”** la fiecare întrebare (antrenament și examen): deschide clientul tău de e-mail cu un mesaj către alexio@trom.tf, precompletat cu codul întrebării și enunțul. **Nu se trimite nimic automat** din aplicație (fără rețea, CSP neschimbat).
+- **Barem ANCOM**: simularea de examen cu timp opțional exista deja. Baremul (nr. întrebări / minim per probă) a fost comparat la 2026-10-27 cu art. 14 din Decizia ANCOM 245/2017, textul inițial din M.Of. 261/2017 reprodus pe legeaz.net — valorile coincid. Decizia nu stabilește o durată a examenului; modificările ulterioare (Decizia 139/2022) și textul consolidat **nu au fost verificate** → „de verificat” pe ancom.ro. Nota apare în ecranul Examen.
+- Textele noi sunt în 8 limbi; traducerile fr/it/es/pt/hu/de sunt automate, neverificate de vorbitori nativi.
+
 ## Istoric / Changelog
+
+### 2.1.0 — 2026-10-27 (anterior: 2.0.0)
+
+- Buton „Raportează o greșeală” (mailto), mențiune „bancă nevalidată oficial ANCOM” și notă despre barem (art. 14, Decizia 245/2017); procentul de întrebări verificate nu este afirmat.
 
 ### 1.3.9 — 2026-10-23
 

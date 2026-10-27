@@ -2,7 +2,9 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.0.0 · **Last updated:** 2026-10-26
+**Version:** 2.1.0 · **Last updated:** 2026-10-27
+
+**Status:** stable (the app); content not officially validated by ANCOM · **Offline:** complete (no network requests; mailto/ETER links open only on click)
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -81,7 +83,18 @@ A click (or Enter) on the displayed version (`v 1.1.0 · 2026-10-14`) opens the 
 
 Download `index.html` and open it in the browser; it works fully without internet.
 
+## Status and 2.1.0 news (2026-10-27)
+
+- **Content status: not officially validated by ANCOM.** The bank of 723 questions has not been validated or endorsed by ANCOM; this is now also shown in the app (Home screen). **The percentage of verified questions has not been established and is not claimed.** The only fact the author supports: the numerical radio engineering answers (over 150 of 723) were recalculated with a script.
+- **"Report a mistake" button** on every question (training and exam): it opens your own e-mail client with a message to alexio@trom.tf, pre-filled with the question code and statement. **Nothing is sent automatically** by the app (no network, CSP unchanged).
+- **ANCOM scoring scheme**: the timed exam simulation already existed. The scheme (questions / minimum per test) was compared on 2026-10-27 with Art. 14 of ANCOM Decision 245/2017, original text of M.Of. 261/2017 as reproduced on legeaz.net — the values match. The decision sets no exam duration; later amendments (Decision 139/2022) and the consolidated text **have not been checked** -> "to be verified" on ancom.ro. The note appears on the Exam screen.
+- The new texts exist in 8 languages; the fr/it/es/pt/hu/de translations are automatic and not checked by native speakers.
+
 ## History / Changelog
+
+### 2.1.0 — 2026-10-27 (previous: 2.0.0)
+
+- "Report a mistake" button (mailto), "question bank not officially validated by ANCOM" notice and a note on the scoring scheme (Art. 14, Decision 245/2017); the percentage of verified questions is not claimed.
 
 ### 1.3.9 — 2026-10-23
 
