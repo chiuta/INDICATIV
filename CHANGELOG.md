@@ -2,6 +2,8 @@
 
 ## 2.3.0 — 2026-11-01
 
+- Corectat: adaptorul «Trimite la…» nu mai aruncă eroare când kitul FFF lipsește (gardian pe fiecare bloc; găsit de testul «fără kit» din CI).
+
 Nou: «Trimite la…» (fff-kit, modulul FFF.bridge) — testul de cunoștințe poate fi trimis către Undava ca quiz (plic .fff.json, cu confirmare înainte de import). Fără rețea, fără telemetrie.
 
 ## 2.2.0 — 2026-10-27 (anterior: 2.1.0)

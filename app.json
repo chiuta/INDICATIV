@@ -17,8 +17,8 @@
     "indicativ.v1",
     "indicativ.v1::"
   ],
-  "sizeBytes": 2232984,
-  "sha256": "7f8d95b9253fcca92b210842c50a3ee0094e0729580e3698a118fc39c469621d",
+  "sizeBytes": 2233070,
+  "sha256": "0859afe51e8fbd6035e91183201d7abb89cb567cac6a1d25566e9f665c05f555",
   "csp": {
     "present": true,
     "directives": {
