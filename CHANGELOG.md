@@ -1,5 +1,9 @@
 # Jurnal de modificări — INDICATIV
 
+## 2.3.0 — 2026-11-01
+
+Nou: «Trimite la…» (fff-kit, modulul FFF.bridge) — testul de cunoștințe poate fi trimis către Undava ca quiz (plic .fff.json, cu confirmare înainte de import). Fără rețea, fără telemetrie.
+
 ## 2.2.0 — 2026-10-27 (anterior: 2.1.0)
 
 - Test nou `tests/barem.test.mjs`: baremul simulării rămâne egal cu art. 14 din Decizia ANCOM 245/2017 (textul inițial). Fără schimbări de comportament.
