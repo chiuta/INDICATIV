@@ -1,5 +1,8 @@
 # Jurnal de modificări — INDICATIV
 
+## 2.3.5 — 2026-11-08
+Antrenament: după răspuns se afișează câmpul `note` al întrebării, când există (în bancă, 252 din cele 254 de înregistrări cu cheia `note` au valoarea null; doar 2 au text: OP-018, OP-038), cu eticheta «Notă:» în 8 limbi. Test nou `tests/note.test.mjs`.
+
 ## 2.3.2 — 2026-11-03
 
 Destinații «Trimite către…» pentru pașaportul de învățare: adăugate FENARIUM și MENSURA (registrul de aplicații-țintă reinjectat din hub).
