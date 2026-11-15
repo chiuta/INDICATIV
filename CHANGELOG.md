@@ -1,5 +1,9 @@
 # Jurnal de modificări — INDICATIV
 
+## 2.3.10 — 2026-11-15
+
+- Nou: texturi fractale hiper-detaliate (fff-texturi 1.1.2) — fundalul și suprafețele mari (carduri, panouri, antete, butoane; filele și dialogurile ascunse la încărcare, când se deschid) primesc un material generat local (WebGL2, fără rețea și fără imagini), care se repetă fără cusătură; culorile aplicației rămân ale ei. Se oprește din dialogul „Transparență” sau cu `?notex=1`.
+
 ## 2.3.5 — 2026-11-08
 Antrenament: după răspuns se afișează câmpul `note` al întrebării, când există (în bancă, 252 din cele 254 de înregistrări cu cheia `note` au valoarea null; doar 2 au text: OP-018, OP-038), cu eticheta «Notă:» în 8 limbi. Test nou `tests/note.test.mjs`.
 
