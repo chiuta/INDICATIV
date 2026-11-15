@@ -12,6 +12,7 @@
     "serviceWorker",
     "localStorage",
     "Web Crypto",
+    "WebGL",
     "BroadcastChannel"
   ],
   "storageKeys": [
@@ -20,13 +21,13 @@
     "indicativ.v1",
     "indicativ.v1::"
   ],
-  "sizeBytes": 2504561,
-  "sha256": "1a2c13720a27bb325b60564be4655a963c26141585d3882166a1e2dc680c14c8",
+  "sizeBytes": 2556570,
+  "sha256": "b537535e5542e9d932195e01558ef49ddc860d4a4430af48c81d2f314486dccf",
   "csp": {
     "present": true,
     "directives": {
       "default-src": "'none'",
-      "script-src": "sha256×8",
+      "script-src": "sha256×9",
       "style-src": "'unsafe-inline'",
       "img-src": "'self' data:",
       "manifest-src": "'self' data:",
